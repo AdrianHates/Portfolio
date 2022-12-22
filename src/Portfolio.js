@@ -14,7 +14,7 @@ class Portfolio extends React.Component {
       es: 0
     };     
   }
-
+ 
   componentDidMount() { 
     
     document.addEventListener('scroll',(event)=>{
@@ -82,7 +82,6 @@ class Portfolio extends React.Component {
   }
   
   render () {
-    
           
     return (      
       <div id='todo'>        

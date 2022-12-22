@@ -6,7 +6,7 @@ const Contact = ( { id } ) => {
   <div id={id}>
       <p>CONTACT</p>
       <hr className='hw' />
-      <form action="https://formsubmit.co/ kurono1807@gmail.com?success_url=https://adrianhates.github.io/Herless/" method="POST">
+      <form action="https://formsubmit.co/kurono1807@gmail.com" method="POST">
         <div>
           <label htmlFor='email'>Email:*</label><br />
           <input type='email' placeholder='Enter your email' name='email' required></input>
@@ -15,7 +15,9 @@ const Contact = ( { id } ) => {
           <label htmlFor='mensaje'>Message:</label><br />
           <textarea name='mensaje' type='text' rows='5' cols='24' required></textarea>
         </div>
-        <button type="submit" value='Enviar'>Send</button>
+        <button type="submit" value="Enviar">Send</button>
+        <input type="hidden" name="_captcha" value="false"></input>
+        
       </form>
       <div>
       <Red src='https://upload.wikimedia.org/wikipedia/commons/e/ee/Logo_de_Facebook.png' href='https://www.facebook.com/HerlessOliverRamosEspinoza/'></Red>
