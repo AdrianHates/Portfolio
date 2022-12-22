@@ -6,7 +6,7 @@ const Contact = ( { id } ) => {
   <div id={id}>
       <p>CONTACT</p>
       <hr className='hw' />
-      <form id='formulario' action="https://formsubmit.co/kurono1807@gmail.com" method="POST" aria-labelledby='datos-contacto'>
+      <form action="https://formsubmit.co/ kurono1807@gmail.com?success_url=https://adrianhates.github.io/Herless/" method="POST">
         <div>
           <label htmlFor='email'>Email:*</label><br />
           <input type='email' placeholder='Enter your email' name='email' required></input>
