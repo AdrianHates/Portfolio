@@ -121,17 +121,21 @@ li {
 
 #navbar button {
   position: absolute;
-  width: 30px;
-  height: 25px;
-  border-radius: 12px;
+  width: 35px;
+  height: 30px;
+  border-radius: 15px;
   font-size: 20px;
   background-color: rgb(129, 31, 31);
   overflow:visible;
   cursor: pointer;
   top: 12.5px;
   right: 12.5px;
-  padding: 0px 0 2.5px 3px;  
+  padding: 0px 0px 4px 3.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
+  color: white
 }
 
 #nombre {
