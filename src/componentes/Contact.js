@@ -6,7 +6,7 @@ const Contact = ( { id } ) => {
   <div id={id}>
       <p>CONTACT</p>
       <hr className='hw' />
-      <form action="https://formsubmit.co/kurono1807@gmail.com" method="POST" aria-labelledby='datos-contacto'>
+      <form id='formulario' action="https://formsubmit.co/kurono1807@gmail.com" method="POST" aria-labelledby='datos-contacto'>
         <div>
           <label htmlFor='email'>Email:*</label><br />
           <input type='email' placeholder='Enter your email' name='email' required></input>
@@ -15,7 +15,7 @@ const Contact = ( { id } ) => {
           <label htmlFor='mensaje'>Message:</label><br />
           <textarea name='mensaje' type='text' rows='5' cols='24' required></textarea>
         </div>
-        <button type="submit">Send</button>
+        <button type="submit" value='Enviar'>Send</button>
       </form>
       <div>
       <Red src='https://upload.wikimedia.org/wikipedia/commons/e/ee/Logo_de_Facebook.png' href='https://www.facebook.com/HerlessOliverRamosEspinoza/'></Red>

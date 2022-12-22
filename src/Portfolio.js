@@ -15,7 +15,11 @@ class Portfolio extends React.Component {
     };     
   }
 
-  componentDidMount() {
+  componentDidMount() {   
+    document.getElementById('formulario').addEventListener("submit", function (evento) {
+    window.location.replace("https://adrianhates.github.io/Herless/");      
+    }) 
+
     document.addEventListener('scroll',(event)=>{
       event.transitionDuration='0ms'
       if(window.scrollY > 416 ){
