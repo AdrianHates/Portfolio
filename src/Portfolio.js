@@ -63,6 +63,15 @@ class Portfolio extends React.Component {
     e1.addEventListener('mouseout', () => {
       e2.style='top:-220px;opactity:1;transition:500ms'
     })
+
+    var f1 = document.getElementById('node.js')
+    var f2 = document.getElementById('tooltip5') 
+    f1.addEventListener('mouseover', () => {
+      f2.style='top:-235px;transition:500ms;opacity:1'
+    });
+    f1.addEventListener('mouseout', () => {
+      f2.style='top:-220px;opactity:1;transition:500ms'
+    })
   
   }
 
@@ -111,6 +120,7 @@ class Portfolio extends React.Component {
           <Skillset texto='CSS' tooltip='tooltip2' src='https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg' id='css3' alt='css3' />
           <Skillset texto='Javascript' tooltip='tooltip3' src='https://www.freepnglogos.com/uploads/javascript-png/js-logo-png-5.png' id='js' alt='js' />
           <Skillset texto='React' tooltip='tooltip4' src='https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg' id='react' alt='react' />
+          <Skillset texto='Node.js' tooltip='tooltip5' src='https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg' id='node.js' alt='node.js' />
           </div>
         </div>
         <Contact id='contacto' />
