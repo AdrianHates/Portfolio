@@ -72,6 +72,15 @@ class Portfolio extends React.Component {
     f1.addEventListener('mouseout', () => {
       f2.style='top:-220px;opactity:1;transition:500ms'
     })
+
+    var g1 = document.getElementById('relationaldatabase')
+    var g2 = document.getElementById('tooltip6') 
+    g1.addEventListener('mouseover', () => {
+      g2.style='top:-235px;transition:500ms;opacity:1'
+    });
+    g1.addEventListener('mouseout', () => {
+      g2.style='top:-220px;opactity:1;transition:500ms'
+    })
   
   }
 
@@ -91,7 +100,7 @@ class Portfolio extends React.Component {
   }
   
   render () {
-          
+    
     return (      
       <div id='todo'>        
         <Titulo id='titulo' name='Herless Oliver Ramos Espinoza' src='https://img.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg' trabajo='Desarrollador Frontend' />
@@ -121,6 +130,7 @@ class Portfolio extends React.Component {
           <Skillset texto='Javascript' tooltip='tooltip3' src='https://www.freepnglogos.com/uploads/javascript-png/js-logo-png-5.png' id='js' alt='js' />
           <Skillset texto='React' tooltip='tooltip4' src='https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg' id='react' alt='react' />
           <Skillset texto='Node.js' tooltip='tooltip5' src='https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg' id='node.js' alt='node.js' />
+          <Skillset texto='Relational Database' tooltip='tooltip6' src='https://icon-library.com/images/relational-database-icon/relational-database-icon-5.jpg' id='relationaldatabase' alt='RDatabase' />
           </div>
         </div>
         <Contact id='contacto' />
