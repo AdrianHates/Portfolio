@@ -4,7 +4,7 @@ const Navbar = ( { onClick } ) => {
     return(
         <div id='navbar'>
               <div id='nombre'>
-                <a href='/'>
+                <a href='/Portfolio/'>
                 <span>
                   Herless Oliver Ramos Espinoza<small>Desarrollador Frontend</small>
                 </span>
