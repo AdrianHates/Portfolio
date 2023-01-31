@@ -109,15 +109,16 @@ class Portfolio extends React.Component {
           <p>PORTFOLIO</p>
           <hr id='he' />
           <div id='columnas'>
-          <Proyecto src='https://i.imgur.com/3o1GD0q.png' text='Proyecto1' href='https://adrianhates.github.io/E-commerceEasyShop' />
-          <Proyecto src='https://i.imgur.com/eIazWJO.png' text='Proyecto2' href='https://adrianhates.github.io/Tetris/' />
-          <Proyecto src='https://i.imgur.com/CJCc27h.png' text='Proyecto3' href='https://codepen.io/Fade-Out/pen/VwdraWV' />
-          <Proyecto src='https://i.imgur.com/mBLN4mR.png' text='Proyecto4' href='https://codepen.io/Fade-Out/pen/dyKGNJO' />
-          <Proyecto src='https://i.imgur.com/aau1G4X.png' text='Proyecto5' href='https://codepen.io/Fade-Out/pen/PoaozoV' />
-          <Proyecto src='https://i.imgur.com/OF8ZnlC.png' text='Proyecto6' href='https://codepen.io/volcivar/pen/peyxrw' />
-          <Proyecto src='https://imgur.com/G0ebZTb.png' text='Proyecto7' href='https://codepen.io/Fade-Out/full/KKeOrEY' />
-          <Proyecto src='https://i.imgur.com/aSj5djG.png' text='Proyecto8' href='https://codepen.io/Fade-Out/pen/VwdzLjO' />
-          <Proyecto src='https://i.imgur.com/JXMdTmi.png' text='Proyecto9' href='https://codepen.io/Fade-Out/pen/MWXOZYL' />
+          <Proyecto src='https://i.imgur.com/AufDsvn.png' text='Proyecto1' href='https://adrianhates.github.io/WebTour/' />
+          <Proyecto src='https://i.imgur.com/3o1GD0q.png' text='Proyecto2' href='https://adrianhates.github.io/E-commerceEasyShop' />
+          <Proyecto src='https://i.imgur.com/eIazWJO.png' text='Proyecto3' href='https://adrianhates.github.io/Tetris/' />
+          <Proyecto src='https://i.imgur.com/CJCc27h.png' text='Proyecto4' href='https://codepen.io/Fade-Out/pen/VwdraWV' />
+          <Proyecto src='https://i.imgur.com/mBLN4mR.png' text='Proyecto5' href='https://codepen.io/Fade-Out/pen/dyKGNJO' />
+          <Proyecto src='https://i.imgur.com/aau1G4X.png' text='Proyecto6' href='https://codepen.io/Fade-Out/pen/PoaozoV' />
+          <Proyecto src='https://i.imgur.com/OF8ZnlC.png' text='Proyecto7' href='https://codepen.io/volcivar/pen/peyxrw' />
+          <Proyecto src='https://imgur.com/G0ebZTb.png' text='Proyecto8' href='https://codepen.io/Fade-Out/full/KKeOrEY' />
+          <Proyecto src='https://i.imgur.com/aSj5djG.png' text='Proyecto9' href='https://codepen.io/Fade-Out/pen/VwdzLjO' />
+          <Proyecto src='https://i.imgur.com/JXMdTmi.png' text='Proyecto10' href='https://codepen.io/Fade-Out/pen/MWXOZYL' />
           </div>
           <div id='enlace'>        
           <Enlace href='https://codepen.io/Fade-Out' text='Show all ' />
