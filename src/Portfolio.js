@@ -17,15 +17,6 @@ class Portfolio extends React.Component {
  
   componentDidMount() { 
     
-    /*var b1 = document.getElementById('html5')
-    var b2 = document.getElementById('tooltip1') 
-    b1.addEventListener('mouseover', () => {      
-      b2.style='top:-235px;transition:500ms;opacity:1'
-    });
-    b1.addEventListener('mouseout', () => {
-      b2.style='top:-220px;opactity:1;transition:500ms'
-      
-    })*/
     this.style('html5','tooltip1')
     this.style('css3','tooltip2')
     this.style('js','tooltip3')

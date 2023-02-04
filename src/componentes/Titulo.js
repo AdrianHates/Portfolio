@@ -4,7 +4,7 @@ const Titulo = ({ id, name, trabajo,src }) => {
     return(
         <div id={id}>
         <div id='bloque'>
-        <h1>{name}</h1>
+        <h1><i style={{fontSize:'20px', fontWeight:'400'}}>Bienvenido, me llamo</i><br></br>{name}</h1>
         <hr id='hr' />
         <h3>{trabajo}</h3>
         </div>
