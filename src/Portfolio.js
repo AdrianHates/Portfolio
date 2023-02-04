@@ -17,17 +17,7 @@ class Portfolio extends React.Component {
  
   componentDidMount() { 
     
-    document.addEventListener('scroll',(event)=>{
-      event.transitionDuration='0ms'
-      if(window.scrollY > 416 ){
-        document.getElementById('navbar').style.position='fixed';      
-        document.getElementById('navbar').style.top='0';
-      } else {
-        document.getElementById('navbar').style.position='absolute'
-        document.getElementById('navbar').style.top='416px';
-      }
-    })
-    var b1 = document.getElementById('html5')
+    /*var b1 = document.getElementById('html5')
     var b2 = document.getElementById('tooltip1') 
     b1.addEventListener('mouseover', () => {      
       b2.style='top:-235px;transition:500ms;opacity:1'
@@ -35,57 +25,29 @@ class Portfolio extends React.Component {
     b1.addEventListener('mouseout', () => {
       b2.style='top:-220px;opactity:1;transition:500ms'
       
-    })
-
-    var c1 = document.getElementById('css3')
-    var c2 = document.getElementById('tooltip2') 
-    c1.addEventListener('mouseover', () => {
-      c2.style='top:-235px;transition:500ms;opacity:1'
-    });
-    c1.addEventListener('mouseout', () => {
-      c2.style='top:-220px;opactity:1;transition:500ms'
-    })
-
-    var d1 = document.getElementById('js')
-    var d2 = document.getElementById('tooltip3') 
-    d1.addEventListener('mouseover', () => {
-      d2.style='top:-235px;transition:500ms;opacity:1'
-    });
-    d1.addEventListener('mouseout', () => {
-      d2.style='top:-220px;opactity:1;transition:500ms'
-    })
-
-    var e1 = document.getElementById('react')
-    var e2 = document.getElementById('tooltip4') 
-    e1.addEventListener('mouseover', () => {
-      e2.style='top:-235px;transition:500ms;opacity:1'
-    });
-    e1.addEventListener('mouseout', () => {
-      e2.style='top:-220px;opactity:1;transition:500ms'
-    })
-
-    var f1 = document.getElementById('node.js')
-    var f2 = document.getElementById('tooltip5') 
-    f1.addEventListener('mouseover', () => {
-      f2.style='top:-235px;transition:500ms;opacity:1'
-    });
-    f1.addEventListener('mouseout', () => {
-      f2.style='top:-220px;opactity:1;transition:500ms'
-    })
-
-    var g1 = document.getElementById('relationaldatabase')
-    var g2 = document.getElementById('tooltip6') 
-    g1.addEventListener('mouseover', () => {
-      g2.style='top:-235px;transition:500ms;opacity:1'
-    });
-    g1.addEventListener('mouseout', () => {
-      g2.style='top:-220px;opactity:1;transition:500ms'
-    })
+    })*/
+    this.style('html5','tooltip1')
+    this.style('css3','tooltip2')
+    this.style('js','tooltip3')
+    this.style('react','tooltip4')
+    this.style('node.js','tooltip5')
+    this.style('relationaldatabase','tooltip6')
   
   }
 
+  style=(n,m)=>{
+    let doc1=document.getElementById(n);
+    let doc2=document.getElementById(m);
+    doc1.addEventListener('mouseover',()=>{
+      doc2.style='top:-235px;transition:500ms;opacity:1'
+    });
+    doc1.addEventListener('mouseout', () => {
+      doc2.style='top:-220px;opactity:1;transition:500ms'
+    })
+  }
+
   expandir=()=>{
-    var a = this.state.es;
+    let a = this.state.es;
     document.getElementById('fixed').style.transitionDuration='500ms'
     if(a===0) {
     document.getElementById('fixed').style.height='130px';
