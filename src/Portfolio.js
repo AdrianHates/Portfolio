@@ -62,7 +62,7 @@ class Portfolio extends React.Component {
           <p>PORTFOLIO</p>
           <hr id='he' />
           <div id='columnas'>
-          <Proyecto src='https://i.imgur.com/AufDsvn.png' text='Proyecto1' href='https://adrianhates.github.io/WebTour/' />
+          <Proyecto src='https://i.imgur.com/Unnw5k1.png' text='Proyecto1' href='https://adrianhates.github.io/WebTour/' />
           <Proyecto src='https://i.imgur.com/3o1GD0q.png' text='Proyecto2' href='https://adrianhates.github.io/E-commerceEasyShop' />
           <Proyecto src='https://i.imgur.com/eIazWJO.png' text='Proyecto3' href='https://adrianhates.github.io/Tetris/' />
           <Proyecto src='https://i.imgur.com/CJCc27h.png' text='Proyecto4' href='https://codepen.io/Fade-Out/pen/VwdraWV' />
