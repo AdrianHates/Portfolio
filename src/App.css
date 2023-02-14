@@ -94,7 +94,6 @@ transition: .5s;
   background-color: var(--c-main);
   height: 50px;
   color: rgb(0, 0, 0);
-  opacity: 0.9;
   font-family: "Montserrat"
 }
 
