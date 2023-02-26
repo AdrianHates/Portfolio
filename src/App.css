@@ -406,30 +406,55 @@ footer {
 
 .proyecto {
   position: relative;
+  
 }
 
 .proyecto::after {
-  font-family:'Bootstrap-icons';
-  content: '\F52A';
+  font-family:'Montserrat';
+  content: attr(data-texto);
   display: flex;
   width: 100%;
-  height: 100%;
-  
-  font-size: 7.5rem;
+  height: 17.5rem;  
+  font-size: 3rem;
   top: 0;
   left: 0;
   opacity: 0;
+  padding-top: 1.5rem;
+  font-weight: 1000;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   color: var(--c-white-pure);
   position: absolute;
-  transition: transform 0.2s ease-in-out;
+  transition: all .5s ease-in-out;
 
 }
 
 .proyecto:hover::after, .proyecto:hover .proyecto-img {
   background-color: rgba(0,0,0,0.5);
   opacity: 1;
-  color: var(--c-adrianhates);
-  transform: scale(1.05);
+  color: var(--c-white-pure);
+}
+
+.proyecto::before {
+  font-family:'Montserrat';
+  content: attr(data-tecnologias);
+  display: flex;
+  width: 100%;
+  height: 100%;  
+  font-size: 1.5rem;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  padding-top: 8rem;
+  justify-content: center;
+  font-weight: 1000;
+  text-align: center;
+  color: var(--c-white-pure);
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+
+}
+.proyecto:hover::before {
+  opacity: 1;
+  z-index: 500;
 }
