@@ -425,12 +425,12 @@ footer {
   text-align: center;
   color: var(--c-white-pure);
   position: absolute;
-  transition: all .5s ease-in-out;
+  transition: all .25s ease-in-out;
 
 }
 
 .proyecto:hover::after, .proyecto:hover .proyecto-img {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.8);
   opacity: 1;
   color: var(--c-white-pure);
 }
@@ -451,7 +451,7 @@ footer {
   text-align: center;
   color: var(--c-white-pure);
   position: absolute;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
 
 }
 .proyecto:hover::before {
