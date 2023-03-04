@@ -13,19 +13,38 @@ class Portfolio extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      es: 0
-    };     
+      es: 0,
+      profesion: 'Desarrollador Frontend',
+    };    
+    this.i=0 
   }
  
   componentDidMount() { 
-    
     this.style('html5','tooltip1')
     this.style('css3','tooltip2')
     this.style('js','tooltip3')
     this.style('react','tooltip4')
     this.style('node.js','tooltip5')
     this.style('relationaldatabase','tooltip6')
+    let a = document.getElementById('bloque').querySelector('h3');
+    this.escribirFrase(a)
+
   
+  }
+
+  escribirFrase = (a) => {
+    a.textContent += this.state.profesion.charAt(this.i); // usa this.i en lugar de i
+    this.i++;
+  
+    if (this.i < this.state.profesion.length) { // usa this.i en lugar de i
+      setTimeout(() => this.escribirFrase(a), 100); // usa una función de flecha para preservar el contexto `this`
+    } else if (this.i === this.state.profesion.length) { // usa this.i en lugar de i
+      setTimeout(() => {
+        a.textContent = "";
+        this.i = 0;
+        this.escribirFrase(a);
+      }, 1500);
+    }
   }
 
   style=(n,m)=>{
@@ -58,7 +77,7 @@ class Portfolio extends React.Component {
     
     return (      
       <div id='todo'>        
-        <Titulo id='titulo' name='Herless Oliver Ramos Espinoza' src='https://img.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg' trabajo='Desarrollador Frontend' />
+        <Titulo id='titulo' name='Herless Oliver Ramos Espinoza' src='https://img.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg' />
         <Navbar onClick={this.expandir} />     
         <div id='portafolio'>
           <p>PORTFOLIO</p>
