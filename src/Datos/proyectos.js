@@ -1,17 +1,17 @@
 const proyectos=[
   {
-    src: 'https://i.imgur.com/Unnw5k1.png',
-    texto: 'Web tourism',
+    texto: 'Burgers Web',
     categoria: 'web',
-    href: 'https://adrianhates.github.io/WebTour/',
-    tecnologias: 'HTML5, CSS3, Bootstrap, JS'
-  },{
+    tecnologias: 'HTML5, CSS3, JS, Boostrap, React',
+    src: 'https://i.imgur.com/ybBq1dm.png', 
+    href: 'https://adrianhates.github.io/Burgers/' 
+  }, {
     src: 'https://i.imgur.com/3o1GD0q.png',
     texto: 'Easy-Shop',
     categoria: 'web',
     href: 'https://adrianhates.github.io/E-commerceEasyShop',
     tecnologias: 'HTML5, CSS3, JS'
-  },{
+  }, {
     texto: 'Tetris',
     categoria: 'desk',
     tecnologias: 'HTML5, CSS3, JS, React',
@@ -24,15 +24,13 @@ const proyectos=[
     categoria: 'web',
     src: 'https://i.imgur.com/dEcCRm5.jpg', 
     href: 'https://adrianhates.github.io/Delivery/' 
-  },
-  {
-    texto: 'Burgers Web',
+  }, {
+    src: 'https://i.imgur.com/Unnw5k1.png',
+    texto: 'Web tourism',
     categoria: 'web',
-    tecnologias: 'HTML5, CSS3, JS, Boostrap, React',
-    src: 'https://i.imgur.com/ybBq1dm.png', 
-    href: 'https://adrianhates.github.io/Burgers/' 
-  },
-  {
+    href: 'https://adrianhates.github.io/WebTour/',
+    tecnologias: 'HTML5, CSS3, Bootstrap, JS'
+  }, {
     texto: 'Calculator',
     categoria: 'desk',
     tecnologias: 'HTML5, CSS3, JS, React',
