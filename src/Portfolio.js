@@ -26,6 +26,7 @@ class Portfolio extends React.Component {
     this.style('react','tooltip4')
     this.style('node.js','tooltip5')
     this.style('relationaldatabase','tooltip6')
+    this.style('typescript','tooltip7')
     let a = document.getElementById('bloque').querySelector('h3');
     this.escribirFrase(a)
 
@@ -99,6 +100,7 @@ class Portfolio extends React.Component {
           <Skillset texto='React' tooltip='tooltip4' src='https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg' id='react' alt='react' />
           <Skillset texto='Node.js' tooltip='tooltip5' src='https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg' id='node.js' alt='node.js' />
           <Skillset texto='Relational Database' tooltip='tooltip6' src='https://icon-library.com/images/relational-database-icon/relational-database-icon-5.jpg' id='relationaldatabase' alt='RDatabase' />
+          <Skillset texto='TypeScript' tooltip='tooltip7' src='https://cdn-icons-png.flaticon.com/512/5968/5968381.png' id='typescript' alt='typescript' />
           </div>
         </div>
         <Contact id='contacto' />
