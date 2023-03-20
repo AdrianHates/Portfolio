@@ -6,12 +6,6 @@ const proyectos=[
     src: 'https://i.imgur.com/ybBq1dm.png', 
     href: 'https://adrianhates.github.io/Burgers/' 
   }, {
-    src: 'https://i.imgur.com/3o1GD0q.png',
-    texto: 'Easy-Shop',
-    categoria: 'web',
-    href: 'https://adrianhates.github.io/E-commerceEasyShop',
-    tecnologias: 'HTML5, CSS3, JS'
-  }, {
     texto: 'Tetris',
     categoria: 'desk',
     tecnologias: 'HTML5, CSS3, JS, React',
@@ -36,8 +30,13 @@ const proyectos=[
     tecnologias: 'HTML5, CSS3, JS, React',
     src: 'https://i.imgur.com/aau1G4X.png', 
     href: 'https://codepen.io/Fade-Out/pen/PoaozoV' 
-  },
-  {
+  }, {
+    src: 'https://i.imgur.com/3o1GD0q.png',
+    texto: 'Easy-Shop',
+    categoria: 'web',
+    href: 'https://adrianhates.github.io/E-commerceEasyShop',
+    tecnologias: 'HTML5, CSS3, JS'
+  }, {
     texto: 'Wikipedia Visor',
     categoria: 'web',
     tecnologias: 'HTML5, CSS3, JS, React',
