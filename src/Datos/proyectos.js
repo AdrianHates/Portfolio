@@ -12,14 +12,14 @@ const proyectos=[
     src: 'https://i.imgur.com/eIazWJO.png', 
     href: 'https://adrianhates.github.io/Tetris/' 
   }, {
-    texto: 'Calculator',
+    texto: 'Calculadora',
     categoria: 'desk',
     tecnologias: 'HTML5, CSS3, JS, React',
     src: 'https://i.imgur.com/aau1G4X.png', 
-    href: 'https://codepen.io/Fade-Out/pen/PoaozoV' 
+    href: 'https://codepen.io/Fade-Out/full/PoaozoV' 
   }, {
     src: 'https://i.imgur.com/3o1GD0q.png',
-    texto: 'Easy-Shop',
+    texto: 'Funcionalidad e-commerce',
     categoria: 'web',
     href: 'https://adrianhates.github.io/E-commerceEasyShop',
     tecnologias: 'HTML5, CSS3, JS'
