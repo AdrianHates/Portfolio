@@ -42,7 +42,7 @@ const proyectos=[
     categoria: 'desk',
     tecnologias: 'HTML5, CSS3, JS, React',
     src: 'https://i.imgur.com/mBLN4mR.png', 
-    href: 'https://codepen.io/Fade-Out/pen/dyKGNJO'  
+    href: 'https://codepen.io/Fade-Out/full/dyKGNJO'  
   }, {
     texto: 'Web Delivery',
     tecnologias: 'HTML5, CSS3, JS',
