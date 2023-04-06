@@ -11,19 +11,6 @@ const proyectos=[
     tecnologias: 'HTML5, CSS3, JS, React',
     src: 'https://i.imgur.com/eIazWJO.png', 
     href: 'https://adrianhates.github.io/Tetris/' 
-  },
-  {
-    texto: 'Web Delivery',
-    tecnologias: 'HTML5, CSS3, JS',
-    categoria: 'web',
-    src: 'https://i.imgur.com/dEcCRm5.jpg', 
-    href: 'https://adrianhates.github.io/Delivery/' 
-  }, {
-    src: 'https://i.imgur.com/Unnw5k1.png',
-    texto: 'Web tourism',
-    categoria: 'web',
-    href: 'https://adrianhates.github.io/WebTour/',
-    tecnologias: 'HTML5, CSS3, Bootstrap, JS'
   }, {
     texto: 'Calculator',
     categoria: 'desk',
@@ -56,6 +43,18 @@ const proyectos=[
     tecnologias: 'HTML5, CSS3, JS, React',
     src: 'https://i.imgur.com/mBLN4mR.png', 
     href: 'https://codepen.io/Fade-Out/pen/dyKGNJO'  
+  }, {
+    texto: 'Web Delivery',
+    tecnologias: 'HTML5, CSS3, JS',
+    categoria: 'web',
+    src: 'https://i.imgur.com/dEcCRm5.jpg', 
+    href: 'https://adrianhates.github.io/Delivery/' 
+  }, {
+    src: 'https://i.imgur.com/Unnw5k1.png',
+    texto: 'Web tourism',
+    categoria: 'web',
+    href: 'https://adrianhates.github.io/WebTour/',
+    tecnologias: 'HTML5, CSS3, Bootstrap, JS'
   }
 ]
 
