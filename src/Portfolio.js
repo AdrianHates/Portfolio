@@ -84,7 +84,7 @@ class Portfolio extends React.Component {
           <p>PORTFOLIO</p>
           <hr id='he' />
           <div id='columnas'>          
-            {proyectos.map((x,i)=><Proyecto key={i} src={x.src} href={x.href} texto={x.texto} tecnologias={x.tecnologias} />)}
+            {proyectos.map((x,i)=><Proyecto key={i} src={x.src} href={x.href} alt={x.texto} />)}
           </div>
           <div id='enlace'>        
           <Enlace href='https://codepen.io/Fade-Out' text='Show all ' />

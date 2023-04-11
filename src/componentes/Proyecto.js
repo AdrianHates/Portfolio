@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Proyecto=( { href, src, texto, tecnologias } ) => {
+const Proyecto=( { href, src, texto } ) => {
   return(
          
-      <a className='proyecto proyecto-titulo' data-texto={texto} data-tecnologias={tecnologias} href={href} rel="noreferrer" target='_blank'>
-        <img className='proyecto-img' alt='Proyecto' src={src} />
+      <a className='proyecto proyecto-titulo' data-texto={texto} href={href} rel="noreferrer" target='_blank'>
+        <img className='proyecto-img' alt={texto} src={src} />
       </a>                
     
   )
