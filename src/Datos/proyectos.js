@@ -2,19 +2,16 @@ const proyectos=[
   {
     texto: 'Burgers Web',
     categoria: 'web',
-    tecnologias: 'HTML5, CSS3, JS, Boostrap, React',
     src: 'https://i.imgur.com/ybBq1dm.png', 
     href: 'https://adrianhates.github.io/Burgers/' 
   }, {
-    texto: 'Tetris',
+    texto: 'Game of Life',
     categoria: 'desk',
-    tecnologias: 'HTML5, CSS3, JS, React',
-    src: 'https://i.imgur.com/eIazWJO.png', 
-    href: 'https://adrianhates.github.io/Tetris/' 
+    src: 'https://imgur.com/G0ebZTb.png', 
+    href: 'https://codepen.io/Fade-Out/full/KKeOrEY' 
   }, {
     texto: 'Calculadora',
     categoria: 'desk',
-    tecnologias: 'HTML5, CSS3, JS, React',
     src: 'https://i.imgur.com/aau1G4X.png', 
     href: 'https://codepen.io/Fade-Out/full/PoaozoV' 
   }, {
@@ -26,26 +23,21 @@ const proyectos=[
   }, {
     texto: 'Wikipedia Visor',
     categoria: 'web',
-    tecnologias: 'HTML5, CSS3, JS, React',
     src: 'https://i.imgur.com/nsc1SSF.png', 
     href: 'https://codepen.io/Fade-Out/full/MWBGrvd' 
-  },
-  {
-    texto: 'Game of Life',
+  }, {
+    texto: 'Tetris',
     categoria: 'desk',
-    tecnologias: 'HTML5, CSS3, JS, React',
-    src: 'https://imgur.com/G0ebZTb.png', 
-    href: 'https://codepen.io/Fade-Out/full/KKeOrEY' 
+    src: 'https://i.imgur.com/eIazWJO.png', 
+    href: 'https://adrianhates.github.io/Tetris/' 
   },
   {
     texto: '25 + 5 Clock',
     categoria: 'desk',
-    tecnologias: 'HTML5, CSS3, JS, React',
     src: 'https://i.imgur.com/mBLN4mR.png', 
     href: 'https://codepen.io/Fade-Out/full/dyKGNJO'  
   }, {
     texto: 'Web Delivery',
-    tecnologias: 'HTML5, CSS3, JS',
     categoria: 'web',
     src: 'https://i.imgur.com/dEcCRm5.jpg', 
     href: 'https://adrianhates.github.io/Delivery/' 
@@ -54,7 +46,6 @@ const proyectos=[
     texto: 'Web tourism',
     categoria: 'web',
     href: 'https://adrianhates.github.io/WebTour/',
-    tecnologias: 'HTML5, CSS3, Bootstrap, JS'
   }
 ]
 
