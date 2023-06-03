@@ -21,10 +21,10 @@ const proyectos=[
     href: 'https://adrianhates.github.io/E-commerceEasyShop',
     tecnologias: 'HTML5, CSS3, JS'
   }, {
-    texto: 'Wikipedia Visor',
-    categoria: 'web',
-    src: 'https://i.imgur.com/nsc1SSF.png', 
-    href: 'https://codepen.io/Fade-Out/full/MWBGrvd' 
+    texto: 'Tres Raya',
+    categoria: 'app',
+    src: 'https://i.imgur.com/rsxkcw4.png', 
+    href: 'https://adrianhates.github.io/tresraya/' 
   }, {
     texto: 'Tetris',
     categoria: 'desk',
