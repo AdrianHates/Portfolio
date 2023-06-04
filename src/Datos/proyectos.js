@@ -8,7 +8,7 @@ const proyectos=[
     texto: 'Game of Life',
     categoria: 'desk',
     src: 'https://imgur.com/G0ebZTb.png', 
-    href: 'https://codepen.io/Fade-Out/full/KKeOrEY' 
+    href: 'https://adrianhates.github.io/gameoflife/' 
   }, {
     texto: 'Calculadora',
     categoria: 'desk',
