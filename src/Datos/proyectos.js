@@ -1,5 +1,11 @@
 const proyectos=[
   {
+    texto: 'TiendaVirtualFull',
+    categoria: 'ecommerce',
+    src: 'https://i.imgur.com/9glzzTY.png',
+    href: 'https://tiendavirtualfull.onrender.com/'
+  },
+  {
     texto: 'Burgers Web',
     categoria: 'web',
     src: 'https://i.imgur.com/ybBq1dm.png', 
