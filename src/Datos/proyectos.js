@@ -8,7 +8,7 @@ const proyectos=[
   {
     texto: 'Burgers Web',
     categoria: 'web',
-    src: 'https://i.imgur.com/ybBq1dm.png', 
+    src: 'https://i.imgur.com/pmZ3usA.png', 
     href: 'https://adrianhates.github.io/Burgers/' 
   }, {
     texto: 'Game of Life',
