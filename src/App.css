@@ -51,12 +51,14 @@ height: 300px;
 border: 1px solid black;
 display: flex;
 border-radius: 3px;
-box-shadow: 0px 0px 2px var(--c-white-pure);
-transition: .5s;
+background-color: rgba(0,0,0,0.8);
+color: var(--c-white-pure);
+transition: box-shadow 0.5s ease, border-radius 0.5s ease;
 }
 
+
 .proyecto-img:hover {
-  border: 1px solid var(--c-adrianhates);
+  
   box-shadow:1px 1px 20px var(--c-white-pure);
   border-radius: 3px;
   
@@ -366,7 +368,13 @@ footer {
 
 .proyecto {
   font-size: 2rem;
-  padding: 0
+  padding: 0;
+  transition: scale .5s ease;
+}
+
+.proyecto:hover {
+  scale: 1.01;
+  opacity: .75;
 }
 
 #portafolio {
@@ -407,12 +415,6 @@ footer {
   width: 250px;
   left: 33.3%;
   
-}
-
-.proyecto-img {
-  background-color: rgba(0,0,0,0.8);
-  opacity: 1;
-  color: var(--c-white-pure);
 }
 
 /*Titulo animacion*/
