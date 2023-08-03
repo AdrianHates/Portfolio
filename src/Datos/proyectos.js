@@ -4,8 +4,12 @@ const proyectos=[
     categoria: 'ecommerce',
     src: 'https://i.imgur.com/9glzzTY.png',
     href: 'https://tiendavirtualfull.onrender.com/'
-  },
-  {
+  }, {
+    texto: 'Fastest Food',
+    categoria: 'web',
+    src: 'https://i.imgur.com/ckxyMmY.png',
+    href: 'https://adrianhates.github.io/fastestfood/'
+  }, {
     texto: 'Burgers Web',
     categoria: 'web',
     src: 'https://i.imgur.com/pmZ3usA.png', 
