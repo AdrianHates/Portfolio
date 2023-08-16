@@ -180,7 +180,7 @@ transition: box-shadow 0.5s ease, border-radius 0.5s ease;
   font-family: "Montserrat";
   transition: all .3s ease-in-out;
   & > ul {
-    display: flex;
+    
     gap: 1rem;
     & > li {
       list-style-type: none;
@@ -194,6 +194,10 @@ transition: box-shadow 0.5s ease, border-radius 0.5s ease;
       }
     }
   }
+}
+
+#navbar > ul {
+  display: flex;
 }
 
 .scrolled {
