@@ -1,24 +1,52 @@
-import React from 'react';
+import { useState, useEffect, useContext } from "react";
+import { ElementsContext } from "../Portfolio";
 
-const Navbar = ( { onClick } ) => {
-    return(
-        <div id='navbar'>
-              <div id='nombre'>
-                <a href='/Portfolio/'>
-                <span>
-                  Herless Oliver Ramos Espinoza<small>Desarrollador Frontend</small>
-                </span>
-                </a>
-                <button id='butosky' onClick={onClick}>☰</button>
-              </div>
-              <ul id='fixed'>
-              <li><a href='#portafolio'>Portfolio</a></li>
-              <li><a href='#skills'>Skillset</a></li>
-              {/*<li><a>Experience</a></li>*/}
-              <li><a href='#contacto'>Contact</a></li>
-              </ul>
-        </div>   
-    )
+function Navegador( { logo, navDash } ) {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [link, setLink] = useState(null)
+  const { elementsRef, nav } = useContext(ElementsContext)
+  console.log(nav)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+
+      elementsRef.current.forEach(section=> {
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.offsetHeight;
+        const scrollY = window.scrollY;
+        
+        
+        if(scrollY >= sectionTop && scrollY < sectionBottom) {
+          setLink(section.id)
+        }
+      })
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+
+    // Eliminar el evento al desmontar el componente
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  return(
+
+
+    <nav id="navbar" className={`${nav?'toggle':''} ${isScrolled?'scrolled':''}`}>
+      
+      <ul>
+        {navDash.map( (x,i) => <li key={i} >
+            <a href={x.url} className={link===x.url.slice(1)?'active':''}>
+              {x.texto}
+            </a>
+          </li>)}
+      </ul>
+    </nav>
+  )
 }
 
-export default Navbar
+export default Navegador;

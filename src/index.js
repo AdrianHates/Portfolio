@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Portfolio from './Portfolio'
 
-ReactDOM.createRoot(document.getElementById('root')).render(<React.StrictMode>
-  <Portfolio /></React.StrictMode>);
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <Portfolio />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

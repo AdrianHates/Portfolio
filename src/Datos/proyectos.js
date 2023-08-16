@@ -40,16 +40,6 @@ const proyectos=[
     categoria: 'desk',
     src: 'https://i.imgur.com/mBLN4mR.png', 
     href: 'https://codepen.io/Fade-Out/full/dyKGNJO'  
-  }, {
-    texto: 'Web Delivery',
-    categoria: 'web',
-    src: 'https://i.imgur.com/dEcCRm5.jpg', 
-    href: 'https://adrianhates.github.io/Delivery/' 
-  }, {
-    src: 'https://i.imgur.com/Unnw5k1.png',
-    texto: 'Web tourism',
-    categoria: 'web',
-    href: 'https://adrianhates.github.io/WebTour/',
   }
 ]
 

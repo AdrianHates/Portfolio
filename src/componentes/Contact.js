@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Red from './Red';
+import { ElementsContext } from '../Portfolio';
 
 const Contact = ( { id } ) => {
+  const { elementsRef } = useContext(ElementsContext)
+
   return(
-  <div id={id}>
+  <div id={id} ref={el => (elementsRef.current[3] = el)}>
       <p>CONTACT</p>
       <hr className='hw' />
       <form action="https://formsubmit.co/kurono1807@gmail.com" method="POST" aria-labelledby='datos-contacto'>

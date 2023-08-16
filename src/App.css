@@ -5,10 +5,46 @@
   --c-black: #1c1c1c;
   --c-sky: #4e89a7;
   --c-fondo-sky: #316e8c;
+  --c-fondo-sky-transparent: #316e8c9a;
   --c-adrianhates: #bdbdbd;
   --c-white-pure: white;
+  --c-negro: black;
+  --c-transparent: transparent;
+  --c-naranja: orange;
+  --c-rojo: red;
+  --c-rojo-boton: #E2211C;
+  --c-celeste: skyblue;
+  --c-azul: blue;
+  --c-amarillo: yellow;
+  --c-green: green;
+  --c-mainHigh: #1d1d1d;
+  --c-mainMedium: #313131;
+  --c-mainLow: #404040;
+  --c-dorado: #efb810;
+  --c-dorado-button: #febe10;
+  --c-Paypal: #ffc439;
+  --c-gris-1: #bdbdbd;
+  --c-blanco: white;
+  --c-blanco-suave: #F7F7F7;
+  --c-naranja1: #fda085;
+  --c-dorado-fino: #dd9933;
+  --gradiente1: linear-gradient(to right, #f6d365, #fda085);
+  --family-like: 'Montserrat';
+  --c-negro-navegador-letter: #333;
+  --c-negro-landing-page: #121215;
+  --c-negro-landing-page-0: #17171b;
+  --c-azul-facebook: #3b5998;
+  --c-azul-linkedin: rgb(0, 125, 189);
 }
 
+#todo {
+  background-image: url('https://img.freepik.com/foto-gratis/fondo-cosmico-luces-laser-azul-claro-oscuro-perfecto-fondo-pantalla-digital_181624-23690.jpg?w=1060&t=st=1692087010~exp=1692087610~hmac=306e0216a7226e5376aad543c072204a9e07bde579cc6fd2d1d7b64183ce8cfa');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
 
 * {
   margin: 0;
@@ -20,29 +56,64 @@
 html {
 scroll-behavior: smooth;
 -webkit-text-size-adjust: 100%;  
+background-color: var(--c-negro-landing-page);
+
 }
 
 #titulo img {  
-min-width: 100%;
+width: 100%;
 position: absolute;
-object-fit: contain;
-left:50%;
-top:50%;
-min-height: 100%;
-transform: translate(-50.03%,-50%)
+object-fit: cover;
+left:0%;
+top:0%;
+min-height: 100vh;
 }
 
 #titulo {
 color: var(--c-white-pure);
-height: 416px;
 overflow: hidden;
 width:100%;
-position: relative  
+position: relative;
+height: 100vh;
+border-bottom: 2px solid var(--c-dorado);
+& > div:nth-of-type(2) {
+  opacity: .6;
+}
 }
 
 #bloque {
-position: relative;  
-z-index: 1;
+  position: relative;  
+  z-index: 1;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  
+  > div {
+    display: flex;
+    width: 60ch;
+    text-align: left;
+    flex-direction: column;
+    & > div {
+      display: flex;
+      align-items: center;
+      
+      & > h2 {
+        color: var(--c-dorado);
+        padding-left: 1rem;
+      }
+      
+    }
+    & > p {
+      opacity: .9;    
+    }
+  }
+  
 }
 
 .proyecto-img {
@@ -79,7 +150,7 @@ transition: box-shadow 0.5s ease, border-radius 0.5s ease;
   transition-duration: 0.4s;
   box-sizing: border-box;
   border: 2px solid var(--c-white-pure);
-  background-image: linear-gradient(to right, transparent, transparent), linear-gradient(to right, var(--c-main), var(--c-main));
+  background-image: linear-gradient(to right, transparent, transparent), linear-gradient(to right, var(--c-sky), var(--c-sky));
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 0% 100%;
@@ -88,9 +159,10 @@ transition: box-shadow 0.5s ease, border-radius 0.5s ease;
 }
 
 #enlace {
-  display: block;
-  margin-top: 300px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
 }
 
 #navbar {
@@ -98,104 +170,52 @@ transition: box-shadow 0.5s ease, border-radius 0.5s ease;
   width: 100%;
   font-size: 15px;
   text-align: center; 
-  position: sticky;
+  position: fixed;
   z-index: 999;
-  display: block;
-  background-color: var(--c-main);
-  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
   color: rgb(0, 0, 0);
-  font-family: "Montserrat"
+  font-family: "Montserrat";
+  transition: all .3s ease-in-out;
+  & > ul {
+    display: flex;
+    gap: 1rem;
+    & > li {
+      list-style-type: none;
+      
+      & > a {
+        text-decoration: none;
+        font-family: 'Mukta', sans-serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: var(--c-blanco)
+      }
+    }
+  }
 }
 
-#navbar #fixed {
-  height: 0px;
-  border-top: 1px solid rgba(0, 0, 0, 0.103);
-  overflow: hidden;
-  background-color: var(--c-main);
+.scrolled {
+  background-color: var(--c-fondo-sky) ;
 }
-
-#navbar ul a {
-  padding: 11px 0px;
-  margin: -11px 0px;
-  color: var(--c-white-pure);
-  text-decoration: none;
-  display: block
+.active {
+  color: var(--c-dorado-fino) !important
 }
-
-#navbar ul a:hover {
-  color: black;
-  text-decoration: none;
-}
-
-#navbar #nombre a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  padding-left: 50px;  
-}
-
-#navbar #nombre a:hover {
-  color: var(--c-white-pure);
-}
-
-ul li:hover {
-  background-color: var(--c-white-pure);
-  box-sizing: border-box;
-}
-
-li {
-  list-style-type: none;
-  font-size: 15px;
-  text-decoration: none;
-  padding: 11.5px;
-}
-
-#navbar button {
-  position: absolute;
-  width: 35px;
-  height: 30px;
-  border-radius: 15px;
-  font-size: 20px;
-  background-color: var(--c-main);
-  overflow:visible;
-  cursor: pointer;
-  top: 12.5px;
-  right: 12.5px;
-  padding: 0px 0px 4px 3.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  color: var(--c-white-pure)
-}
-
-#nombre {
-  display: flex;
-  height: 48.5px;    
-}
-
-#nombre small {
-  padding-left: 15px;
-}
-
-#portafolio > :first-child {
+#portfolio > :first-child {
   padding: 100px 0 50px 0;
   text-align: center;
   width: 100%;
   font-size: 32.5px;
+  font-family: 'fondamento';
 }
 
 #skills {
-  background-color: var(--c-sky);
   text-align: center;
-  padding-bottom: 50px;
-  
+  border-top: 2px solid var(--c-dorado);
 }
 
 #skills  p {
-  margin-top: 0px;
   padding-top: 75px;
   font-size: 32.5px;
   color: var(--c-white-pure);
@@ -245,12 +265,13 @@ li {
 }
 
 #contacto {
-  border-top: 2px solid var(--c-main);
-  background-color:var(--c-sky);
+  border-top: 2px solid var(--c-dorado);
   padding: 5em 0 0;
   width: 100%;
   margin-top: 0px;
-  text-align: center  
+  text-align: center;
+  font-family: 'Fondamento';
+
 }
 
 #contacto p {
@@ -265,7 +286,7 @@ form > div > label {
 }
 
 form > div > input, textarea {
-  background-color: var(--c-fondo-sky);
+  background-color: var(--c-fondo-sky-transparent);
   width: 75%;
   border: none;
   cursor: pointer;
@@ -286,51 +307,34 @@ form > div > input::placeholder, input {
 
 
 footer {
-  font-size: 10px;
-  background-color: var(--c-adrianhates);
+  font-size: 12px;
+  background-color: var(--c-fondo-sky-transparent);
   height: 75px;
   display: flex;    
   align-items: center;
   justify-content: center;
+  color: var(--c-dorado-fino);
+  font-weight: 900;
   
 }
-
-
-#titulo h1 {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  margin-top: 150px 
-}
-
-#bloque > div {
-  font-size: 1.2rem;
-  color: var(--c-white-pure);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 275px;
-  position: absolute;
-}
-
 
 #hr {
   top: 235px;
   position: relative;
-  background-image: linear-gradient(to right,transparent,rgb(129, 31, 31),transparent);
+  background-image: linear-gradient(to right,transparent,var(--c-sky),transparent);
   height: 0.15rem;
   border: 0;
 }
 
 #he {
-  background-image: linear-gradient(to right,transparent,var(--c-main),transparent);
+  background-image: linear-gradient(to right,transparent,var(--c-sky),transparent);
   height: 0.175rem;
   border: 0;
   margin-bottom: 100px;
 }
 
 .hw {
-  background-image: linear-gradient(to right,transparent,var(--c-white-pure),transparent);
+  background-image: linear-gradient(to right,transparent,var(--c-sky),transparent);
   border: 0;
   margin: 40px auto;
   height: 0.15rem;
@@ -343,9 +347,9 @@ footer {
 
 .btn-show-all:hover {
   background-color: var(--c-black);
-  border: 1px solid var(--c-main);
+  border: 1px solid var(--c-sky);
   box-shadow: 1px 1px 10px var(--c-sky);
-  color: var(--c-sky);
+  color: var(--c-dorado-fino);
   background-size: 100% 100%;
 }
 .btn-show-all:active {
@@ -374,18 +378,15 @@ footer {
 
 .proyecto:hover {
   scale: 1.01;
-  opacity: .75;
+  opacity: .9;
 }
 
-#portafolio {
-  background-color: var(--c-black);
-  padding-bottom: 15rem;
-  border-bottom: 2px solid var(--c-main);
-  color:var(--c-white-pure)
+#portfolio {
+  color:var(--c-white-pure);
 }
 
 #skills span {
-  background-color: rgba(0,0,0,.75);
+  background-color: rgba(50, 173, 255, 0.4);
   border-radius: 0.5rem;
   left: 50%;
   position: relative;
@@ -398,7 +399,6 @@ footer {
   z-index: 1;
   color: var(--c-white-pure);
   transform: translate(-60px,10px);
-
 }
 
 #skills span::after {
@@ -422,6 +422,24 @@ footer {
   animation: blink-caret .5s infinite;
 }
 
+#toggle {
+  display: none;
+  margin: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--c-dorado-button);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.toggle {
+  display: none !important
+}
+
 @keyframes blink-caret {
   from, to {
     opacity: 1;
@@ -431,6 +449,37 @@ footer {
   }
 }
 
+@media (max-width: 1000px) {
+  #toggle {
+    display: flex;
+  }
+  #navbar {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 4.1rem;
+    background-color: var(--c-fondo-sky);
+    & > ul {
+      width: 100%;
+      gap: 0;
+      flex-direction: column;
+      & > li {
+        width: 100%;
+        & > a {
+        
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          padding: .5rem 1.5rem;
+        }
+        &:hover {
+          background-color: var(--c-dorado);
+        }
+      }
+    }
+  }
+}
 
 
 
