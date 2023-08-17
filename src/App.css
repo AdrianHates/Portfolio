@@ -117,8 +117,9 @@ border-bottom: 2px solid var(--c-dorado);
 }
 
 .proyecto-img {
-width: 400px;
-height: 300px;
+width: 330px;
+height: 250px;
+object-fit: cover;
 border: 1px solid black;
 display: flex;
 border-radius: 3px;
@@ -220,6 +221,7 @@ transition: box-shadow 0.5s ease, border-radius 0.5s ease;
 }
 
 #skills  p {
+  font-family: 'Fondamento';
   padding-top: 75px;
   font-size: 32.5px;
   color: var(--c-white-pure);
@@ -351,7 +353,7 @@ footer {
 
 .btn-show-all:hover {
   background-color: var(--c-black);
-  border: 1px solid var(--c-sky);
+  border: 2px solid var(--c-sky);
   box-shadow: 1px 1px 10px var(--c-sky);
   color: var(--c-dorado-fino);
   background-size: 100% 100%;

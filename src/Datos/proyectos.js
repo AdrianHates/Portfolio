@@ -24,12 +24,12 @@ const proyectos=[
     categoria: 'desk',
     src: 'https://i.imgur.com/aau1G4X.png', 
     href: 'https://codepen.io/Fade-Out/full/PoaozoV' 
-  }, {
+  }, /*{
     texto: 'Tres Raya',
     categoria: 'app',
     src: 'https://i.imgur.com/rsxkcw4.png', 
     href: 'https://adrianhates.github.io/tresraya/' 
-  }, {
+  },*/ {
     texto: 'Tetris',
     categoria: 'desk',
     src: 'https://i.imgur.com/eIazWJO.png', 

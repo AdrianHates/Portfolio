@@ -8,6 +8,9 @@ import Contact from './componentes/Contact';
 import Navbar from './componentes/Navbar';
 /*Datos*/
 import proyectos from './Datos/proyectos';
+
+import ScrollReveal from 'scrollreveal';
+
 export const ElementsContext = createContext()
 const navDash = [ {
   texto: 'Inicio',
@@ -32,6 +35,8 @@ function Portfolio () {
   let i = 0;
  
   useEffect(() => {
+    ScrollReveal().reveal('not:(div)', '*', { distance: '20px', origin: 'bottom', duration: 500 });
+
     style('html5','tooltip1')
     style('css3','tooltip2')
     style('js','tooltip3')
