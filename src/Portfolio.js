@@ -35,7 +35,7 @@ function Portfolio () {
   let i = 0;
  
   useEffect(() => {
-    ScrollReveal().reveal('not:(div)', '*', { distance: '20px', origin: 'bottom', duration: 500 });
+    ScrollReveal().reveal('section', { distance: '20px', origin: 'bottom', duration: 500 });
 
     style('html5','tooltip1')
     style('css3','tooltip2')

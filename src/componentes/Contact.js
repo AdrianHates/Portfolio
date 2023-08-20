@@ -6,7 +6,7 @@ const Contact = ( { id } ) => {
   const { elementsRef } = useContext(ElementsContext)
 
   return(
-  <div id={id} ref={el => (elementsRef.current[3] = el)}>
+  <section id={id} ref={el => (elementsRef.current[3] = el)}>
       <p>CONTACT</p>
       <hr className='hw' />
       <form action="https://formsubmit.co/kurono1807@gmail.com" method="POST" aria-labelledby='datos-contacto'>
@@ -27,7 +27,7 @@ const Contact = ( { id } ) => {
       <Red src='https://i.imgur.com/E4OCXOA.png' href='https://www.freecodecamp.org/herlessoliver'></Red>
       <Red src='https://static.vecteezy.com/system/resources/previews/010/892/357/non_2x/telephone-transparent-free-png.png' href='https://wa.me/+51914315964'></Red>
       </div>
-  </div>
+  </section>
   )
 }
 
