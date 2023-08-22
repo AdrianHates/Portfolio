@@ -26,7 +26,7 @@ const proyectos=[
     code: 'https://github.com/AdrianHates/gameoflife',
     src: 'https://imgur.com/G0ebZTb.png', 
     href: 'https://adrianhates.github.io/gameoflife/',
-    descripcion: 'Adéntrate en un mundo de simulación y complejidad con la implementación del Juego de la Vida de Conway. Observa cómo las células evolucionan y se transforman en patrones sorprendentes en una interfaz visualmente atractiva. Sumérgete en la programación y diseño de esta simulación en mi portafolio como desarrollador frontend.'
+    descripcion: 'Adéntrate en un mundo de simulación y complejidad con la implementación del Juego de la Vida de Conway. Observa cómo las células evolucionan y se transforman en patrones sorprendentes en una interfaz visualmente atractiva.'
   }, {
     texto: 'Calculadora',
     categoria: 'desk',
