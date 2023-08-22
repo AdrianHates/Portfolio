@@ -90,7 +90,7 @@ function Portfolio () {
           <p>PORTFOLIO</p>
           <hr id='he' />
           <div id='columnas'>          
-            {proyectos.map((x,i)=><Proyecto key={i} src={x.src} href={x.href} alt={x.texto} />)}
+            {proyectos.map((x,i)=><Proyecto key={i} src={x.src} href={x.href} descripcion={x.descripcion} texto={x.texto} code={x.code} />)}
          
           </div>
           <div id='enlace'>        
