@@ -216,36 +216,20 @@ transition: box-shadow 0.5s ease, border-radius 0.5s ease;
   font-family: 'fondamento';
 }
 
+/*Skills*/
+
 #skills {
   text-align: center;
   border-top: 2px solid var(--c-dorado);
+  
 }
 
-#skills  p {
+#skills > p {
   font-family: 'Fondamento';
   padding-top: 75px;
   font-size: 32.5px;
   color: var(--c-white-pure);
   text-align: center;
-}
-
-#skills div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 2rem;
-  margin: 0 auto;
-  width: 100%;
-  padding-top: 10px;
-  max-width: 1280px;
-}
-
-#skills  div  img {
-  margin: 0 auto;
-  width: 150px;
-  height: 150px; 
-}
-#skills div div {
-  padding: -10px;
 }
 
 #contacto  div  a  img {
@@ -372,7 +356,8 @@ footer {
 #columnas {
   display: grid;  
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  
-  grid-gap: 1rem;
+  row-gap: 5rem;
+  column-gap: 1rem;
   margin: 0 auto;
   padding: 0 26px;
   max-width: 1280px;
@@ -454,37 +439,7 @@ footer {
   color:var(--c-white-pure);
 }
 
-#skills span {
-  background-color: rgba(50, 173, 255, 0.4);
-  border-radius: 0.5rem;
-  left: 50%;
-  position: relative;
-  opacity: 0;
-  pointer-events: none;
-  text-align: center;
-  top: -220px;
-  width: 120px;
-  padding: 7px;
-  z-index: 1;
-  color: var(--c-white-pure);
-  transform: translate(-60px,10px);
-}
 
-#skills span::after {
-  border: 5px solid transparent;
-  border-top-color: rgba(0,0,0,.75);
-  content: '';
-  left:50%;
-  margin-left: -5px;
-  position: absolute;
-  top: 100%;  
-}
-
-#skills #tooltip6 {
-  width: 250px;
-  left: 33.3%;
-  
-}
 
 /*Titulo animacion*/
 #cursor {
@@ -507,6 +462,69 @@ footer {
 
 .toggle {
   display: none !important
+}
+
+#skills > div {
+  padding: 50px 0;
+  & button {
+    display: none !important;
+  }
+  & > div {
+    & > div {
+      padding: 100px 0;
+
+    }
+  }
+}
+
+#skills  div  img {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px; 
+}
+
+#skills span {
+  background-color: rgba(50, 173, 255, 0.4) !important;
+  transition: all .5s ease-in-out;
+  border-radius: 0.5rem;
+  left: 0%;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+  text-align: center;
+  top: -150px;
+  width: 120px;
+  padding: 7px;
+  z-index: 1;
+  color: var(--c-white-pure);
+  transform: translate(-60px,10px);
+}
+
+
+#skills span::after {
+  border: 7px solid transparent;
+  border-top-color: var(--c-fondo-sky-transparent);
+  content: '';
+  left:50%;
+  z-index: 999;
+  margin-left: -5px;
+  position: absolute;
+  top: 100%;  
+}
+
+.ver-span {
+  opacity: 1 !important;
+  top: -220px !important;
+}
+
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
 }
 
 @keyframes blink-caret {

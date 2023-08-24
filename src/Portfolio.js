@@ -3,13 +3,12 @@ import React, { useEffect, useState, useRef, createContext } from 'react';
 import Proyecto from './componentes/Proyecto';
 import Enlace from './componentes/Enlace';
 import Titulo from './componentes/Titulo';
-import Skillset from './componentes/Skillset';
 import Contact from './componentes/Contact';
 import Navbar from './componentes/Navbar';
 /*Datos*/
 import proyectos from './Datos/proyectos';
-
 import ScrollReveal from 'scrollreveal';
+import SimpleSlider from './componentes/Slider';
 
 export const ElementsContext = createContext()
 const navDash = [ {
@@ -35,15 +34,9 @@ function Portfolio () {
   let i = 0;
  
   useEffect(() => {
+
     ScrollReveal().reveal('section', { distance: '20px', origin: 'bottom', duration: 500 });
 
-    style('html5','tooltip1')
-    style('css3','tooltip2')
-    style('js','tooltip3')
-    style('react','tooltip4')
-    style('node.js','tooltip5')
-    style('relationaldatabase','tooltip6')
-    style('typescript','tooltip7')
     let a = document.getElementById('bloque').querySelector('h2');
     escribirFrase(a)
     window.addEventListener('resize', () => {
@@ -53,7 +46,7 @@ function Portfolio () {
     })
   }, [])  
   const escribirFrase = (a) => {
-    a.textContent += profesion.charAt(i); // 
+    a.textContent += profesion.charAt(i); 
     i++;
   
     if (i < profesion.length) { 
@@ -65,17 +58,6 @@ function Portfolio () {
         escribirFrase(a);
       }, 1500);
     }
-  }
-
-  const style=(n,m)=>{
-    let doc1=document.getElementById(n);
-    let doc2=document.getElementById(m);
-    doc1.addEventListener('mouseover',()=>{
-      doc2.style='top:-235px;transition:500ms;opacity:1'
-    });
-    doc1.addEventListener('mouseout', () => {
-      doc2.style='top:-220px;opactity:1;transition:500ms'
-    })
   }
   
   function toggleFunction () {
@@ -100,15 +82,9 @@ function Portfolio () {
         <section id='skills' ref={el => (elementsRef.current[2] = el)}>
           <p>SKILLSET</p>
           <hr className='hw' />
-          <div>
-          <Skillset texto='HTML' tooltip='tooltip1' src='https://cdn-icons-png.flaticon.com/512/1051/1051277.png?w=740&t=st=1669328087~exp=1669328687~hmac=7d9f1baf3f744b23793fd984beb58aca6a52eac85c6ada01503db16ec383691e' id='html5' alt='html5' />
-          <Skillset texto='CSS' tooltip='tooltip2' src='https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg' id='css3' alt='css3' />
-          <Skillset texto='Javascript' tooltip='tooltip3' src='https://www.freepnglogos.com/uploads/javascript-png/js-logo-png-5.png' id='js' alt='js' />
-          <Skillset texto='React' tooltip='tooltip4' src='https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg' id='react' alt='react' />
-          <Skillset texto='Node.js' tooltip='tooltip5' src='https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg' id='node.js' alt='node.js' />
-          <Skillset texto='Relational Database' tooltip='tooltip6' src='https://icon-library.com/images/relational-database-icon/relational-database-icon-5.jpg' id='relationaldatabase' alt='RDatabase' />
-          <Skillset texto='TypeScript' tooltip='tooltip7' src='https://cdn-icons-png.flaticon.com/512/5968/5968381.png' id='typescript' alt='typescript' />
-          </div>
+          {/*<div className='prueba'>
+          */}
+          <SimpleSlider />
         </section>
         <Contact id='contacto' />
         <footer>
