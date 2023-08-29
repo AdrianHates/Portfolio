@@ -5,7 +5,6 @@ function Navegador( { logo, navDash } ) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [link, setLink] = useState(null)
   const { elementsRef, nav } = useContext(ElementsContext)
-  console.log(nav)
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {

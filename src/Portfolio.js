@@ -35,7 +35,7 @@ function Portfolio () {
  
   useEffect(() => {
 
-    ScrollReveal().reveal('section', { distance: '20px', origin: 'bottom', duration: 500 });
+    ScrollReveal().reveal('section', { distance: '20px', origin: 'bottom', duration: 1000 });
 
     let a = document.getElementById('bloque').querySelector('h2');
     escribirFrase(a)
@@ -45,6 +45,7 @@ function Portfolio () {
       }
     })
   }, [])  
+
   const escribirFrase = (a) => {
     a.textContent += profesion.charAt(i); 
     i++;
