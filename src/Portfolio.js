@@ -9,7 +9,6 @@ import Navbar from './componentes/Navbar';
 import proyectos from './Datos/proyectos';
 import ScrollReveal from 'scrollreveal';
 import SimpleSlider from './componentes/Slider';
-
 export const ElementsContext = createContext()
 const navDash = [ {
   texto: 'Inicio',
@@ -66,9 +65,9 @@ function Portfolio () {
   }
     return (
       <ElementsContext.Provider value={ { elementsRef, nav } }>      
-      <div id='todo'>        
+      <div id='todo'>
         <Titulo id='titulo' name='Herless Oliver Ramos Espinoza' src='https://img.freepik.com/foto-gratis/sistema-html-concepto-sitio-web_23-2150376744.jpg?w=900&t=st=1692088754~exp=1692089354~hmac=6814e4dc6f6c90f627a4b52fa9bc5a97713cac502fa6f5585135c87086bcde63' />
-        <Navbar navDash={navDash}/>     
+        <Navbar navDash={navDash}/>    
         <section id='portfolio' ref={el => (elementsRef.current[1] = el)}>
           <p>PORTFOLIO</p>
           <hr id='he' />

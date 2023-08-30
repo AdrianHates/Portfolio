@@ -1,16 +1,21 @@
 import { useState, useEffect, useContext } from "react";
 import { ElementsContext } from "../Portfolio";
-
+import flecha from '../flecha.svg'
 function Navegador( { logo, navDash } ) {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [arrow, setArrow] = useState(false)
   const [link, setLink] = useState(null)
   const { elementsRef, nav } = useContext(ElementsContext)
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      const Yscroll = window.scrollY
+      if ( Yscroll > 0) {
         setIsScrolled(true);
+        setArrow(true)
       } else {
         setIsScrolled(false);
+        setArrow(false)
       }
 
       elementsRef.current.forEach(section=> {
@@ -34,7 +39,7 @@ function Navegador( { logo, navDash } ) {
   }, []);
   return(
 
-
+    <>
     <nav id="navbar" className={`${nav?'toggle':''} ${isScrolled?'scrolled':''}`}>
       
       <ul>
@@ -45,6 +50,12 @@ function Navegador( { logo, navDash } ) {
           </li>)}
       </ul>
     </nav>
+    {
+      arrow &&(<a href='#titulo' id='arrow'>
+        <img src={flecha} alt ='flecha' style={{width:'100%', padding:'.5rem'}} />
+      </a> )
+    }
+    </>
   )
 }
 
