@@ -5,7 +5,7 @@ const Proyecto=( { href, src, texto, code, descripcion } ) => {
       <div className='proyecto proyecto-titulo' data-texto={texto}>
         <h6>{texto}</h6>
 
-        <img className='proyecto-img' alt={texto} src={src} />
+        <img className='proyecto-img' loading='lazy' alt={texto} src={src} />
         
           <div>
             <a href={code}>View Code</a>
