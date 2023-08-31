@@ -462,8 +462,7 @@ footer {
 
 .proyecto-img {
   width: 350px;
-  height: 250px;
-  object-fit: cover;
+  object-fit: contain;
   border: 1px solid black;
   display: flex;
   border-radius: 3px;
