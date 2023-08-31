@@ -33,12 +33,12 @@ const proyectos=[
     src: 'https://i.imgur.com/aau1G4X.png', 
     href: 'https://codepen.io/Fade-Out/full/PoaozoV',
     descripcion: 'Descubre una calculadora digital interactiva que pone a tu alcance operaciones matemáticas fundamentales de manera sencilla y eficiente.'
-  }, /*{
+  }, {
     texto: 'Tres Raya',
     categoria: 'app',
     src: 'https://i.imgur.com/rsxkcw4.png', 
     href: 'https://adrianhates.github.io/tresraya/' 
-  },*/ {
+  }, {
     texto: 'Tetris',
     categoria: 'desk',
     code: 'https://github.com/AdrianHates/Tetris',
