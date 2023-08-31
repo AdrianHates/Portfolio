@@ -36,7 +36,7 @@ const proyectos=[
   }, {
     texto: 'Tres Raya',
     categoria: 'app',
-    src: 'https://i.imgur.com/rsxkcw4.png', 
+    src: 'https://i.imgur.com/f4iby7R.png', 
     href: 'https://adrianhates.github.io/tresraya/' 
   }, {
     texto: 'Tetris',
