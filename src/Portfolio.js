@@ -27,7 +27,7 @@ const navDash = [ {
 
 function Portfolio () {
   const elementsRef = useRef([]);
-  const [profesion, setProfesion] = useState('Desarrollador Frontend')
+  const [profesion, setProfesion] = useState('Desarrollador Full Stack')
   const [nav, setNav] = useState(false)
 
   let i = 0;

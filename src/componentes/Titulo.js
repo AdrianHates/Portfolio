@@ -12,7 +12,7 @@ const Titulo = ({ id, name, src }) => {
               
                 <div>Soy<h2></h2><span id="cursor">|</span></div>
               
-              <p> especializado en el desarrollo web. Mi enfoque se centra en crear experiencias de usuario excepcionales a través del diseño y la programación.</p>
+              <p> especializado en el desarrollo frontend. Mi enfoque se centra en crear experiencias de usuario excepcionales a través del diseño y la programación.</p>
 
               </div>
 
