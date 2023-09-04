@@ -434,6 +434,7 @@ footer {
           transition: background-color .5s ease-out;
           &:hover {
             background-color: var(--c-dorado-button);
+            
           }
 
         }      
@@ -451,9 +452,13 @@ footer {
   &:hover {
     box-shadow:1px 1px 20px var(--c-white-pure);
     border-radius: .5rem;
+    
     & > div:nth-of-type(2) {
       background-color: var(--c-negro-landing-page);
-      opacity: 0.3;
+      opacity: 0.3;     
+    }
+    & > div:first-of-type {
+      z-index: 1;
     }
   }
 }
@@ -467,12 +472,6 @@ footer {
   background-color: rgba(0,0,0,0.8);
   color: var(--c-white-pure);
   }
-
-/*
-.proyecto:hover {
-  scale: 1.01;
-  opacity: .9;
-}*/
 
 #portafolio {
   color:var(--c-white-pure);
