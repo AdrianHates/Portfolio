@@ -24,7 +24,7 @@ function Navegador( { logo, navDash } ) {
         const scrollY = window.scrollY;
         
         
-        if(scrollY >= sectionTop && scrollY < sectionBottom) {
+        if(scrollY >= sectionTop - 60 && scrollY < sectionBottom) {
           setLink(section.id)
         }
       })

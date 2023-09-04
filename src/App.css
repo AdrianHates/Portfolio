@@ -231,7 +231,7 @@ border-bottom: 2px solid var(--c-dorado);
   margin: 100px 0;
 }
 
-#portfolio > :first-child {
+#portafolio > :first-child {
   padding: 100px 0 50px 0;
   text-align: center;
   width: 100%;
@@ -241,13 +241,13 @@ border-bottom: 2px solid var(--c-dorado);
 
 /*Skills*/
 
-#skills {
+#habilidades {
   text-align: center;
   border-top: 2px solid var(--c-dorado);
   
 }
 
-#skills > p {
+#habilidades > p {
   font-family: 'Fondamento';
   padding-top: 75px;
   font-size: 32.5px;
@@ -399,25 +399,8 @@ footer {
   gap: 1rem;
   position: relative;
   transition: box-shadow 0.5s ease, border-radius 0.5s ease;
-  &::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;    
-    top: 0;
-    background-color: var(--c-negro-landing-page);
-    opacity: 0;
-    transition: opacity .5s ease-in-out;
-  }
-  &:hover {
-  box-shadow:1px 1px 20px var(--c-white-pure);
-  border-radius: .5rem;
-  &::before {
-    background-color: var(--c-negro-landing-page);
-    opacity: .3;
-  }
-  }
-  & > div {
+  
+  & > div:first-of-type {
     padding: 1rem 0;
     display: flex;
     align-items: center;
@@ -453,10 +436,25 @@ footer {
             background-color: var(--c-dorado-button);
           }
 
-        }
-      
-      
+        }      
     
+  }
+  & > div:nth-of-type(2) {
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+    top: 0;
+    background-color: var(--c-negro-landing-page);
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  }
+  &:hover {
+    box-shadow:1px 1px 20px var(--c-white-pure);
+    border-radius: .5rem;
+    & > div:nth-of-type(2) {
+      background-color: var(--c-negro-landing-page);
+      opacity: 0.3;
+    }
   }
 }
 
@@ -476,7 +474,7 @@ footer {
   opacity: .9;
 }*/
 
-#portfolio {
+#portafolio {
   color:var(--c-white-pure);
 }
 
@@ -505,7 +503,7 @@ footer {
   display: none !important
 }
 
-#skills > div {
+#habilidades > div {
   padding: 50px 0;
   & button {
     display: none !important;
@@ -518,13 +516,13 @@ footer {
   }
 }
 
-#skills  div  img {
+#habilidades  div  img {
   margin: 0 auto;
   width: 150px;
   height: 150px; 
 }
 
-#skills span {
+#habilidades span {
   background-color: rgba(50, 173, 255, 0.4) !important;
   transition: all .5s ease-in-out;
   border-radius: 0.5rem;
@@ -542,7 +540,7 @@ footer {
 }
 
 
-#skills span::after {
+#habilidades span::after {
   border: 7px solid transparent;
   border-top-color: var(--c-fondo-sky-transparent);
   content: '';

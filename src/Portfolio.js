@@ -14,11 +14,11 @@ const navDash = [ {
   texto: 'Inicio',
   url: '#titulo'
 }, {
-  texto: 'Portfolio',
-  url: '#portfolio'
+  texto: 'Portafolio',
+  url: '#portafolio'
 }, {
-  texto: 'Skills',
-  url: '#skills'
+  texto: 'Habilidades',
+  url: '#habilidades'
 }, {
   texto: 'Contacto',
   url: '#contacto'
@@ -27,7 +27,7 @@ const navDash = [ {
 
 function Portfolio () {
   const elementsRef = useRef([]);
-  const [profesion, setProfesion] = useState('Desarrollador Full Stack')
+  const [profesion, setProfesion] = useState('Desarrollador Frontend')
   const [nav, setNav] = useState(false)
 
   let i = 0;
@@ -68,18 +68,18 @@ function Portfolio () {
       <div id='todo'>
         <Titulo id='titulo' name='Herless Oliver Ramos Espinoza' src='https://img.freepik.com/foto-gratis/sistema-html-concepto-sitio-web_23-2150376744.jpg?w=900&t=st=1692088754~exp=1692089354~hmac=6814e4dc6f6c90f627a4b52fa9bc5a97713cac502fa6f5585135c87086bcde63' />
         <Navbar navDash={navDash}/>    
-        <section id='portfolio' ref={el => (elementsRef.current[1] = el)}>
+        <section id='portafolio' ref={el => (elementsRef.current[1] = el)}>
           <p>PORTFOLIO</p>
           <hr id='he' />
           <div id='columnas'>          
-            {proyectos.map((x,i)=><Proyecto key={i} src={x.src} href={x.href} descripcion={x.descripcion} texto={x.texto} code={x.code} />)}
+            {proyectos.map((x,i)=><Proyecto key={i} src={x.src} href={x.href} descripcion={x.descripcion} texto={x.texto} code={x.code} tecnology={x.tecnology}/>)}
          
           </div>
           <div id='enlace'>        
           <Enlace href='https://codepen.io/Fade-Out' text='Show all ' />
           </div>
         </section>        
-        <section id='skills' ref={el => (elementsRef.current[2] = el)}>
+        <section id='habilidades' ref={el => (elementsRef.current[2] = el)}>
           <p>SKILLSET</p>
           <hr className='hw' />
           {/*<div className='prueba'>

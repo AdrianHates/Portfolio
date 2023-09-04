@@ -5,13 +5,13 @@ const proyectos=[
     src: 'https://i.imgur.com/9glzzTY.png',
     href: 'https://tiendavirtualfull.onrender.com/',
     code: 'https://github.com/AdrianHates/tiendavirtualfull',
-    descripcion: 'Plataforma de comercio electrónico en línea que exhibe un catálogo diverso de productos, proporcionando una experiencia de compra intuitiva y un sistema de pago seguro. Destacando en diseño y desarrollo web para ofrecer un entorno atractivo y funcional.'
   }, {
     texto: 'Fastest Food',
     categoria: 'web',
     code: 'https://github.com/AdrianHates/fastestfood',
     src: 'https://i.imgur.com/ckxyMmY.png',
     href: 'https://adrianhates.github.io/fastestfood/',
+    //tecnology: ['Html', 'Css', 'Javascript', 'JQuery'],
     descripcion: 'Explora un mundo de colores y sabores, con una navegación intuitiva que realza la esencia de la experiencia culinaria. Sumérgete en el arte del diseño y desarrollo web mientras descubres nuestra propuesta visualmente atractiva.'
   }, {
     texto: 'Burgers Web',
