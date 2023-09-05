@@ -160,7 +160,7 @@ position: relative;
 height: 100vh;
 border-bottom: 2px solid var(--c-dorado);
 & > div:nth-of-type(2) {
-  opacity: .6;
+  opacity: .4;
 }
 }
 
