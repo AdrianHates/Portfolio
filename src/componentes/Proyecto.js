@@ -8,8 +8,8 @@ const Proyecto=( { href, src, texto, code, descripcion, tecnology } ) => {
         <img className='proyecto-img' loading='lazy' alt={texto} src={src} />
         
         <div>
-            <a href={code}>View Code</a>
-            <a href={href} rel="noreferrer" target='_blank'>Live Demo</a>
+            <a href={code}>Ver Código</a>
+            <a href={href} rel="noreferrer" target='_blank'>Ver Demo</a>
         </div> 
         <div>
           {tecnology && (
