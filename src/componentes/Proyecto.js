@@ -1,6 +1,16 @@
 import React from 'react';
-
+import { react, node, mongo, css, html, jquery, javascript } from '../Datos/svgs'
 const Proyecto=( { href, src, texto, code, descripcion, tecnology } ) => {
+  const grupo = {
+    react,
+    node,
+    mongo,
+    html,
+    css,
+    javascript,
+    jquery,
+  }
+  
   return(
       <div className='proyecto proyecto-titulo' data-texto={texto}>
         <h6>{texto}</h6>
@@ -12,9 +22,12 @@ const Proyecto=( { href, src, texto, code, descripcion, tecnology } ) => {
             <a href={href} rel="noreferrer" target='_blank'>Ver Demo</a>
         </div> 
         <div>
-          {tecnology && (
+          
+        </div>
+        <div>
+        {tecnology && (
             tecnology.map((x,i) => <li key={i}>
-              {x}
+              {grupo[x]}
             </li>))
           }
         </div>
