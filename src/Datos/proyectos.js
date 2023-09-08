@@ -14,6 +14,13 @@ const proyectos=[
     //tecnology: ['Html', 'Css', 'Javascript', 'JQuery'],
     descripcion: 'Explora un mundo de colores y sabores, con una navegación intuitiva que realza la esencia de la experiencia culinaria. Sumérgete en el arte del diseño y desarrollo web mientras descubres nuestra propuesta visualmente atractiva.'
   }, {
+    texto: 'Changomon',
+    code: 'https://github.com/AdrianHates/game-simon',
+    src: 'https://i.imgur.com/KshiWbY.png',
+    href: 'https://adrianhates.github.io/game-simon/',
+    
+
+  }, {
     texto: 'Burgers Web',
     code: 'https://github.com/AdrianHates/Burgers',
     categoria: 'web',
