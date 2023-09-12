@@ -45,7 +45,7 @@ const proyectos=[
     categoria: 'app',
     code: 'https://github.com/AdrianHates/tresraya/tree/master',
     src: 'https://i.imgur.com/f4iby7R.png', 
-    href: 'https://drianhates.github.io/tresraya/',
+    href: 'https://adrianhates.github.io/tresraya/',
     tecnology: ['html', 'css', 'javascript', 'react']
 
   }, {
