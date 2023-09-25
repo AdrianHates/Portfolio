@@ -3,22 +3,22 @@ import Red from './Red';
 import { ElementsContext } from '../Portfolio';
 
 const Contact = ( { id } ) => {
-  const { elementsRef } = useContext(ElementsContext)
+  const { elementsRef, idioma } = useContext(ElementsContext)
 
   return(
   <section id={id} ref={el => (elementsRef.current[3] = el)}>
-      <p>CONTACT</p>
+      <p>{idioma==='ES'?'CONTACTO':'CONTACT'}</p>
       <hr className='hw' />
       <form action="https://formsubmit.co/kurono1807@gmail.com" method="POST" aria-labelledby='datos-contacto'>
         <div>
-          <label htmlFor='email'>Email:*</label><br />
+          <label htmlFor='email'>{idioma==='ES'?'Correo electrónico':'email'}:*</label><br />
           <input type='email' placeholder='Enter your email' name='email' required></input>
         </div>
         <div>
-          <label htmlFor='mensaje'>Message:</label><br />
+          <label htmlFor='mensaje'>{idioma==='ES'?'Mensaje':'Message'}:</label><br />
           <textarea name='mensaje' type='text' rows='5' cols='24' required></textarea>
         </div>
-        <button type="submit">Send</button>
+        <button type="submit">{idioma==='ES'?'Enviar':'Send'}</button>
       </form>
       <div>
       <Red src='https://i.imgur.com/oK8u0F1.png' href='https://www.facebook.com/HerlessOliverRamosEspinoza/'></Red>

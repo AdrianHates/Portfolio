@@ -10,7 +10,7 @@ import proyectos from './Datos/proyectos';
 import ScrollReveal from 'scrollreveal';
 import SimpleSlider from './componentes/Slider';
 export const ElementsContext = createContext()
-const navDash = [ {
+const navDashEs = [ {
   texto: 'Inicio',
   url: '#titulo'
 }, {
@@ -25,18 +25,34 @@ const navDash = [ {
 }
  ]
 
+ const navDashEn = [ {
+  texto: 'Home',
+  url: '#home'
+}, {
+  texto: 'Portfolio',
+  url: '#portfolio'
+}, {
+  texto: 'Skills',
+  url: '#skills'
+}, {
+  texto: 'Contact',
+  url: '#contact'
+}
+ ]
 function Portfolio () {
   const elementsRef = useRef([]);
-  const [profesion, setProfesion] = useState('Desarrollador Frontend')
+  const [profesion, setProfesion] = useState( 'Herless Oliver Ramos Espinoza')
   const [nav, setNav] = useState(false)
-
+  const [idioma, setIdioma] = useState('ES')
+  const name = 'Herless Oliver Ramos Espinoza'
   let i = 0;
+  let direction = 'derecha'
  
   useEffect(() => {
 
     ScrollReveal().reveal('section', { distance: '20px', origin: 'bottom', duration: 1000 });
 
-    let a = document.getElementById('bloque').querySelector('h2');
+    let a = document.getElementById('bloque').querySelector('h3');
     escribirFrase(a)
     window.addEventListener('resize', () => {
       if(window.innerWidth >= 1000) {
@@ -46,17 +62,24 @@ function Portfolio () {
   }, [])  
 
   const escribirFrase = (a) => {
-    a.textContent += profesion.charAt(i); 
-    i++;
-  
-    if (i < profesion.length) { 
+    if (i < profesion.length && direction === 'derecha') { 
+      a.textContent += profesion.charAt(i); 
+      i++;
       setTimeout(() => escribirFrase(a), 100); 
-    } else if (i === profesion.length) { 
-      setTimeout(() => {
-        a.textContent = "";
-        i = 0;
+    } else if (i >= profesion.length && direction === 'derecha') {
+      direction = 'izquierda'
+      setTimeout(() => {          
         escribirFrase(a);
-      }, 1500);
+      }, 1000);
+    } else if(direction === 'izquierda' && i >= 0) {
+      a.textContent = a.textContent.slice(0, i)
+      i--;
+      setTimeout(() => escribirFrase(a), 100); 
+    } else if(direction === 'izquierda' && i < 0) {
+      direction = 'derecha'
+      setTimeout(() => {          
+        escribirFrase(a);
+      }, 1000);
     }
   }
   
@@ -64,31 +87,31 @@ function Portfolio () {
     setNav(!nav)
   }
     return (
-      <ElementsContext.Provider value={ { elementsRef, nav } }>      
+      <ElementsContext.Provider value={ { elementsRef, nav, idioma, setIdioma } }>      
       <div id='todo'>
-        <Titulo id='titulo' name='Herless Oliver Ramos Espinoza' src='https://img.freepik.com/foto-gratis/sistema-html-concepto-sitio-web_23-2150376744.jpg?w=900&t=st=1692088754~exp=1692089354~hmac=6814e4dc6f6c90f627a4b52fa9bc5a97713cac502fa6f5585135c87086bcde63' />
-        <Navbar navDash={navDash}/>    
-        <section id='portafolio' ref={el => (elementsRef.current[1] = el)}>
-          <p>PORTFOLIO</p>
+        <Titulo id={`${idioma==='ES'?'titulo':'home'}`} name={name} src='https://img.freepik.com/foto-gratis/sistema-html-concepto-sitio-web_23-2150376744.jpg?w=900&t=st=1692088754~exp=1692089354~hmac=6814e4dc6f6c90f627a4b52fa9bc5a97713cac502fa6f5585135c87086bcde63' />
+        <Navbar navDashEs={navDashEs} navDashEn={navDashEn} />    
+        <section id={`${idioma==='ES'?'portafolio':'portfolio'}`} ref={el => (elementsRef.current[1] = el)}>
+          <p>{idioma==='ES'?'PORTAFOLIO':'PORTFOLIO'}</p>
           <hr id='he' />
           <div id='columnas'>          
             {proyectos.map((x,i)=><Proyecto key={i} src={x.src} href={x.href} descripcion={x.descripcion} texto={x.texto} code={x.code} tecnology={x.tecnology}/>)}
          
           </div>
           <div id='enlace'>        
-          <Enlace href='https://codepen.io/Fade-Out' text='Show all ' />
+          <Enlace href='https://codepen.io/Fade-Out' text={idioma==='ES'?'Mostrar':'Show All'} />
           </div>
         </section>        
-        <section id='habilidades' ref={el => (elementsRef.current[2] = el)}>
-          <p>SKILLSET</p>
+        <section id={`${idioma==='ES'?'habilidades':'skills'}`} ref={el => (elementsRef.current[2] = el)}>
+          <p>{idioma==='ES'?'Habilidades':'Skillset'}</p>
           <hr className='hw' />
           {/*<div className='prueba'>
           */}
           <SimpleSlider />
         </section>
-        <Contact id='contacto' />
+        <Contact id={`${idioma==='ES'?'contacto':'contact'}`} />
         <footer>
-        Developed and designed by Herless Oliver Ramos Espinoza. ©2022. All rights reserved.
+        {idioma==='ES'?`Desarrollado y diseñado por ${name}. ©2022. Todos los derechos reservados.`:`Developed and designed by ${name}. ©2022. All rights reserved.`}
         </footer>
         <div id='toggle' onClick={toggleFunction}>☰</div>
       </div>

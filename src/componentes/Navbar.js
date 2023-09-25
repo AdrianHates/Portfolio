@@ -1,11 +1,11 @@
 import { useState, useEffect, useContext } from "react";
 import { ElementsContext } from "../Portfolio";
 import flecha from '../flecha.svg'
-function Navegador( { logo, navDash } ) {
+function Navegador( { logo, navDashEs, navDashEn } ) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [arrow, setArrow] = useState(false)
   const [link, setLink] = useState(null)
-  const { elementsRef, nav } = useContext(ElementsContext)
+  const { elementsRef, nav, idioma, setIdioma } = useContext(ElementsContext)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,13 +37,24 @@ function Navegador( { logo, navDash } ) {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  function Idioma() {
+    if(idioma==='ES') {
+      setIdioma('EN')
+    }
+    if(idioma === 'EN') {
+      setIdioma('ES')
+    }
+  }
   return(
 
     <>
     <nav id="navbar" className={`${nav?'toggle':''} ${isScrolled?'scrolled':''}`}>
-      
+      <div>
+        <label style={{color:`white`}}>{idioma==='ES'? 'Idioma':'Language'}</label><button onClick={Idioma}>{idioma}</button>
+      </div>
       <ul>
-        {navDash.map( (x,i) => <li key={i} >
+        {(idioma === 'ES'? navDashEs : navDashEn).map( (x,i) => <li key={i} >
             <a href={x.url} className={link===x.url.slice(1)?'active':''}>
               {x.texto}
             </a>
@@ -51,7 +62,7 @@ function Navegador( { logo, navDash } ) {
       </ul>
     </nav>
     {
-      arrow &&(<a href='#titulo' id='arrow'>
+      arrow &&(<a href={idioma==='ES'?'#titulo':'#home'} id='arrow'>
         <img src={flecha} alt ='flecha' style={{width:'100%', padding:'.5rem'}} />
       </a> )
     }

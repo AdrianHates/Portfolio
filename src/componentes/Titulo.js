@@ -1,18 +1,16 @@
 import React, { useContext } from 'react';
 import { ElementsContext } from "../Portfolio";
 const Titulo = ({ id, name, src }) => {
-  const { elementsRef } = useContext(ElementsContext)
+  const { elementsRef, idioma } = useContext(ElementsContext)
 
     return(
         <div id={id} ref={el => (elementsRef.current[0] = el)}>
             <div id='bloque'>
               <div>
-                <p><i>Bienvenido, me llamo</i></p>
-                <h3>{name}</h3>
+                <p>{idioma==='ES'?'Hola, mi nombre es':'Hello my name is'}</p>              
+                <div><h3></h3><span id="cursor">|</span></div>
               
-                <div>Soy<h2></h2><span id="cursor">|</span></div>
-              
-              <p> especializado en el desarrollo web. Mi enfoque se centra en crear experiencias de usuario excepcionales a través del diseño y la programación.</p>
+              <p>{idioma==='ES'?'Soy desarrollador frontend especializado en el desarrollo web. Mi enfoque se centra en la mejora continua de mis habilidades, siempre buscando oportunidades para innovar y crear soluciones excepcionales.':'I am a frontend developer specialized in web development. My focus is on continuous improvement of my skills, always looking for opportunities to innovate and create exceptional solutions.'}</p>
 
               </div>
 

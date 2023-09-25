@@ -100,6 +100,25 @@ background-color: var(--c-negro-landing-page);
   color: rgb(0, 0, 0);
   font-family: "Montserrat";
   transition: all .3s ease-in-out;
+  & > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 0 1rem;
+    border: 2px solid var(--c-sky);
+    
+    justify-content: center;
+    & > label {
+      padding: 0 1rem;
+    }
+    & > button {
+      padding: .5rem;
+
+    }
+    & > button:hover {
+      background-color: var(--c-dorado-button);
+    }
+  }
   & > ul {
     gap: 1rem;
     & > li {
@@ -143,7 +162,7 @@ background-color: var(--c-negro-landing-page);
   color: var(--c-dorado-fino) !important
 }
 
-#titulo img {  
+#titulo img, #home img {  
 width: 100%;
 position: absolute;
 object-fit: cover;
@@ -152,7 +171,7 @@ top:0%;
 min-height: 100vh;
 }
 
-#titulo {
+#titulo, #home {
 color: var(--c-white-pure);
 overflow: hidden;
 width:100%;
@@ -188,9 +207,8 @@ border-bottom: 2px solid var(--c-dorado);
       display: flex;
       align-items: center;
       
-      & > h2 {
+      & > h3 {
         color: var(--c-dorado);
-        padding-left: 1rem;
       }
       
     }
@@ -231,7 +249,7 @@ border-bottom: 2px solid var(--c-dorado);
   margin: 100px 0;
 }
 
-#portafolio > :first-child {
+#portafolio > :first-child, #portfolio > :first-child {
   padding: 100px 0 50px 0;
   text-align: center;
   width: 100%;
@@ -241,13 +259,13 @@ border-bottom: 2px solid var(--c-dorado);
 
 /*Skills*/
 
-#habilidades {
+#habilidades, #skills {
   text-align: center;
   border-top: 2px solid var(--c-dorado);
   
 }
 
-#habilidades > p {
+#habilidades > p, #skills > p {
   font-family: 'Fondamento';
   padding-top: 75px;
   font-size: 32.5px;
@@ -255,7 +273,7 @@ border-bottom: 2px solid var(--c-dorado);
   text-align: center;
 }
 
-#contacto  div  a  img {
+#contacto  div  a  img, #contact div a img {
   width: 50px;
   height: 50px;
   margin: 29px;
@@ -265,7 +283,7 @@ border-bottom: 2px solid var(--c-dorado);
 
 }
 
-#contacto button {
+#contacto button, #contacto button {
   background-color: orange;
   border-radius: 15px;
   border: none;
@@ -278,7 +296,7 @@ border-bottom: 2px solid var(--c-dorado);
   font-weight: 600;
 }
 
-#contacto {
+#contacto, #contact {
   border-top: 2px solid var(--c-dorado);
   padding: 5em 0 0;
   width: 100%;
@@ -288,7 +306,7 @@ border-bottom: 2px solid var(--c-dorado);
 
 }
 
-#contacto p {
+#contacto p, #contact p {
   margin: 0 auto;
   font-size: 32.5px;
   color: var(--c-white-pure);  
@@ -512,7 +530,7 @@ footer {
   color: var(--c-white-pure);
   }
 
-#portafolio {
+#portafolio, #portfolio {
   color:var(--c-white-pure);
 }
 
@@ -541,26 +559,33 @@ footer {
   display: none !important
 }
 
-#habilidades > div {
+#habilidades > div, #skills > div {
   padding: 50px 0;
   & button {
     display: none !important;
   }
   & > div {
+
     & > div {
+      
       padding: 100px 0;
 
     }
   }
 }
 
-#habilidades  div  img {
+#habilidades  div  img, #skills div img {
   margin: 0 auto;
-  width: 150px;
-  height: 150px; 
+  width: 80px;
+  height: 80px; 
 }
 
-#habilidades span {
+#habilidades span, #skills span {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   background-color: rgba(50, 173, 255, 0.4) !important;
   transition: all .5s ease-in-out;
   border-radius: 0.5rem;
@@ -568,17 +593,15 @@ footer {
   position: relative;
   opacity: 0;
   pointer-events: none;
-  text-align: center;
-  top: -150px;
+  top: -50px;
   width: 120px;
   padding: 7px;
   z-index: 1;
   color: var(--c-white-pure);
-  transform: translate(-60px,10px);
 }
 
 
-#habilidades span::after {
+#habilidades span::after, #skills span::after {
   border: 7px solid transparent;
   border-top-color: var(--c-fondo-sky-transparent);
   content: '';
@@ -591,7 +614,7 @@ footer {
 
 .ver-span {
   opacity: 1 !important;
-  top: -220px !important;
+  top: -150px !important;
 }
 
 
