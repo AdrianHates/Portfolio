@@ -44,6 +44,7 @@ function Portfolio () {
   const [profesion, setProfesion] = useState( 'Herless Oliver Ramos Espinoza')
   const [nav, setNav] = useState(false)
   const [idioma, setIdioma] = useState('ES')
+  const [modo, setModo] = useState('Dark')
   const name = 'Herless Oliver Ramos Espinoza'
   let i = 0;
   let direction = 'derecha'
@@ -87,7 +88,7 @@ function Portfolio () {
     setNav(!nav)
   }
     return (
-      <ElementsContext.Provider value={ { elementsRef, nav, idioma, setIdioma } }>      
+      <ElementsContext.Provider value={ { elementsRef, nav, idioma, setIdioma, modo, setModo } }>      
       <div id='todo'>
         <Titulo id={`${idioma==='ES'?'titulo':'home'}`} name={name} src='https://img.freepik.com/foto-gratis/sistema-html-concepto-sitio-web_23-2150376744.jpg?w=900&t=st=1692088754~exp=1692089354~hmac=6814e4dc6f6c90f627a4b52fa9bc5a97713cac502fa6f5585135c87086bcde63' />
         <Navbar navDashEs={navDashEs} navDashEn={navDashEn} />    

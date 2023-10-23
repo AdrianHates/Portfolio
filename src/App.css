@@ -209,6 +209,8 @@ border-bottom: 2px solid var(--c-dorado);
       
       & > h3 {
         color: var(--c-dorado);
+        height: 37px
+
       }
       
     }

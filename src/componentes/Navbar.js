@@ -5,7 +5,7 @@ function Navegador( { logo, navDashEs, navDashEn } ) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [arrow, setArrow] = useState(false)
   const [link, setLink] = useState(null)
-  const { elementsRef, nav, idioma, setIdioma } = useContext(ElementsContext)
+  const { elementsRef, nav, idioma, setIdioma, modo, setModo } = useContext(ElementsContext)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,10 +46,26 @@ function Navegador( { logo, navDashEs, navDashEn } ) {
       setIdioma('ES')
     }
   }
+
+  function Modo() {
+    const root = document.documentElement
+    if(modo==='Dark') {
+      setModo('Light')
+      root.style.setProperty('--c-fondo-sky', "white")
+    }
+    if(modo === 'Light') {
+      setModo('Dark')
+      root.style.setProperty('--c-fondo-sky', "#316e8c")
+    }
+  }
+
   return(
 
     <>
     <nav id="navbar" className={`${nav?'toggle':''} ${isScrolled?'scrolled':''}`}>
+      <div>
+        <label style={{color:`white`}}>{idioma==='ES'? 'Modo':'Mode'}</label><button onClick={Modo}>{modo}</button>
+      </div>
       <div>
         <label style={{color:`white`}}>{idioma==='ES'? 'Idioma':'Language'}</label><button onClick={Idioma}>{idioma}</button>
       </div>
