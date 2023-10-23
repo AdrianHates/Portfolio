@@ -63,9 +63,11 @@ function Navegador( { logo, navDashEs, navDashEn } ) {
 
     <>
     <nav id="navbar" className={`${nav?'toggle':''} ${isScrolled?'scrolled':''}`}>
+      {/*
       <div>
         <label style={{color:`white`}}>{idioma==='ES'? 'Modo':'Mode'}</label><button onClick={Modo}>{modo}</button>
       </div>
+  */}
       <div>
         <label style={{color:`white`}}>{idioma==='ES'? 'Idioma':'Language'}</label><button onClick={Idioma}>{idioma}</button>
       </div>
