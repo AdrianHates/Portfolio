@@ -106,13 +106,16 @@ background-color: var(--c-negro-landing-page);
     align-items: center;
     margin: 0 1rem;
     border: 2px solid var(--c-sky);
-    
+
     justify-content: center;
     & > label {
-      padding: 0 1rem;
+      padding: .5rem 1rem;
+      cursor: pointer;
+
     }
     & > button {
       padding: .5rem;
+      cursor: pointer;
 
     }
     & > button:hover {
@@ -203,7 +206,7 @@ border-bottom: 2px solid var(--c-dorado);
     flex-direction: column;
     animation: aparecer-punto-centro 1s ease-out forwards;
     & > div {
-      
+      flex-wrap: wrap;
       display: flex;
       align-items: center;
       
@@ -721,6 +724,10 @@ footer {
         }
       }
     }
+  }
+
+  #bloque > div {
+    width: 80%;
   }
 }
 

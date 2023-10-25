@@ -69,7 +69,7 @@ function Navegador( { logo, navDashEs, navDashEn } ) {
       </div>
   */}
       <div>
-        <label style={{color:`white`}}>{idioma==='ES'? 'Idioma':'Language'}</label><button onClick={Idioma}>{idioma}</button>
+        <label htmlFor='change-language'style={{color:`white`}}>{idioma==='ES'? 'Idioma':'Language'}</label><button id='change-language' onClick={Idioma}>{idioma}</button>
       </div>
       <ul>
         {(idioma === 'ES'? navDashEs : navDashEn).map( (x,i) => <li key={i} >

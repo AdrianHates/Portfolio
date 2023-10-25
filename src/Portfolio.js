@@ -6,10 +6,11 @@ import Titulo from './componentes/Titulo';
 import Contact from './componentes/Contact';
 import Navbar from './componentes/Navbar';
 /*Datos*/
-import proyectos from './Datos/proyectos';
+import { proyectos } from './Datos/datos';
 import ScrollReveal from 'scrollreveal';
 import SimpleSlider from './componentes/Slider';
 export const ElementsContext = createContext()
+
 const navDashEs = [ {
   texto: 'Inicio',
   url: '#titulo'

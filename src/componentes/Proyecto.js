@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ElementsContext } from '../Portfolio';
-import { react, node, mongo, css, html, jquery, javascript } from '../Datos/svgs'
+import { react, node, mongo, css, html, jquery, javascript, liquid } from '../Datos/svgs'
 const Proyecto=( { href, src, texto, code, descripcion, tecnology } ) => {
   const grupo = {
     react,
@@ -10,6 +10,7 @@ const Proyecto=( { href, src, texto, code, descripcion, tecnology } ) => {
     css,
     javascript,
     jquery,
+    liquid
   }
   
   const { idioma } = useContext(ElementsContext)
@@ -20,7 +21,7 @@ const Proyecto=( { href, src, texto, code, descripcion, tecnology } ) => {
         <img className='proyecto-img' loading='lazy' alt={texto} src={src} />
         
         <div>
-            <a href={code}>{idioma==='ES'?'Ver Código':'View Code'}</a>
+            <a href={code} style={{background: !code?'linear-gradient(to right, #f3f3f3, #c0c0c0)':'', color: !code?'gray':''}} >{idioma==='ES'?'Ver Código':'View Code'}</a>
             <a href={href} rel="noreferrer" target='_blank'>{idioma==='ES'?'Ver Demo':'Live Demo'}</a>
         </div> 
         <div>

@@ -1,4 +1,4 @@
-const proyectos=[
+export const proyectos=[
   {
     texto: 'TiendaVirtualFull',
     categoria: 'ecommerce',
@@ -14,18 +14,18 @@ const proyectos=[
     href: 'https://adrianhates.github.io/fastestfood/',
     tecnology: ['html', 'css', 'javascript', 'jquery'],
   }, {
+    
+      texto: 'Chile Hogar',
+      code: null,
+      categoria: 'web',
+      src: 'https://i.imgur.com/DLQpWGF.jpg', 
+      href: 'https://productos-hogar-cl.myshopify.com/',
+      tecnology: ['html', 'css', 'javascript', 'liquid']
+  }, {
     texto: 'Changomon',
     code: 'https://github.com/AdrianHates/game-simon',
     src: 'https://i.imgur.com/KshiWbY.png',
     href: 'https://adrianhates.github.io/game-simon/',
-    tecnology: ['html', 'css', 'javascript', 'react']
-
-  }, {
-    texto: 'Burgers Web',
-    code: 'https://github.com/AdrianHates/Burgers',
-    categoria: 'web',
-    src: 'https://i.imgur.com/pmZ3usA.png', 
-    href: 'https://adrianhates.github.io/Burgers/',
     tecnology: ['html', 'css', 'javascript', 'react']
   }, {
     texto: 'Game of Life',
@@ -65,4 +65,7 @@ const proyectos=[
   }
 ]
 
-export default proyectos;
+export const description = {
+  es: "Soy un programador frontend apasionado y adaptable con experiencia en proyectos desafiantes. Comprometido con el aprendizaje continuo y listo para nuevos desafíos en un entorno tecnológico en constante evolución.",
+  en: "I am a passionate and adaptable frontend programmer with experience in challenging projects. Committed to continuous learning and ready for new challenges in a constantly evolving technological environment."
+}
