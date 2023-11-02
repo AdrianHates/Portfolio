@@ -22,6 +22,14 @@ export const proyectos=[
       href: 'https://productos-hogar-cl.myshopify.com/',
       tecnology: ['html', 'css', 'javascript', 'liquid']
   }, {
+      texto: 'Pokemon Emerald',
+      code: 'https://github.com/AdrianHates/pokemon',
+      src: 'https://i.imgur.com/TqhwpZw.jpg',
+      href: 'https://adrianhates.github.io/pokemon',
+      tecnology: ['react', 'css', 'python', 'postgresql', 'typescript']
+
+
+  }, {
     texto: 'Changomon',
     code: 'https://github.com/AdrianHates/game-simon',
     src: 'https://i.imgur.com/KshiWbY.png',

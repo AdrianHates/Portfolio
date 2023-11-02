@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ElementsContext } from '../Portfolio';
-import { react, node, mongo, css, html, jquery, javascript, liquid } from '../Datos/svgs'
+import { react, node, mongo, css, html, jquery, javascript, liquid, python, typescript, postgresql } from '../Datos/svgs'
 const Proyecto=( { href, src, texto, code, descripcion, tecnology } ) => {
   const grupo = {
     react,
@@ -10,7 +10,10 @@ const Proyecto=( { href, src, texto, code, descripcion, tecnology } ) => {
     css,
     javascript,
     jquery,
-    liquid
+    liquid,
+    python,
+    typescript,
+    postgresql
   }
   
   const { idioma } = useContext(ElementsContext)
