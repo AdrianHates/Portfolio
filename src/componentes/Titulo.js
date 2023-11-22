@@ -16,9 +16,7 @@ const Titulo = ({ id, name, src }) => {
               </div>
 
             </div>
-            <div>
-              <img target='_blank' src={src} rel='noreferrer' alt='imagen animada' />
-            </div>
+            
         </div>
     )
 }

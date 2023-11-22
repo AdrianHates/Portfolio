@@ -52,10 +52,14 @@ function Navegador( { logo, navDashEs, navDashEn } ) {
     if(modo==='Dark') {
       setModo('Light')
       root.style.setProperty('--c-fondo-sky', "white")
+      root.style.setProperty('--c-blanco', "black")
+      
     }
     if(modo === 'Light') {
       setModo('Dark')
       root.style.setProperty('--c-fondo-sky', "#316e8c")
+      root.style.setProperty('--c-blanco', "white")
+
     }
   }
 
@@ -63,11 +67,11 @@ function Navegador( { logo, navDashEs, navDashEn } ) {
 
     <>
     <nav id="navbar" className={`${nav?'toggle':''} ${isScrolled?'scrolled':''}`}>
-      {/*
+      
       <div>
         <label style={{color:`white`}}>{idioma==='ES'? 'Modo':'Mode'}</label><button onClick={Modo}>{modo}</button>
       </div>
-  */}
+  
       <div>
         <label htmlFor='change-language'style={{color:`white`}}>{idioma==='ES'? 'Idioma':'Language'}</label><button id='change-language' onClick={Idioma}>{idioma}</button>
       </div>
