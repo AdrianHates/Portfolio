@@ -16,7 +16,6 @@ const Titulo = ({ id, name, src }) => {
               </div>
 
             </div>
-            
         </div>
     )
 }

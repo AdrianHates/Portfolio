@@ -31,11 +31,16 @@
   --c-dorado-fino: #dd9933;
   --gradiente1: linear-gradient(to right, #f6d365, #fda085);
   --family-like: 'Montserrat';
-  --c-negro-navegador-letter: #333;
+  --c-navegador-letter: white;
   --c-negro-landing-page: #121215;
   --c-negro-landing-page-0: #17171b;
   --c-azul-facebook: #3b5998;
   --c-azul-linkedin: rgb(0, 125, 189);
+  --v-background-0: var(--c-white);
+  --v-background-1: var(--c-sky);
+  --v-letter-0: var(--c-blanco);
+  --v-letter-1: var(--c-sky);
+  --c-sky-opacity-1: #87CEEB44;
 }
 
 * {
@@ -48,7 +53,7 @@
 html {
 scroll-behavior: smooth;
 -webkit-text-size-adjust: 100%;  
-background-color: var(--c-negro-landing-page);
+background-color: var(--v-background-0);
 }
 
 #arrow {
@@ -78,7 +83,7 @@ background-color: var(--c-negro-landing-page);
   justify-content: flex-end;
   align-items: center;
   padding: 1rem 2rem;
-  color: var(--c-black);
+  color: var(--c-navegador-letter);
   font-family: "Montserrat";
   transition: all .3s ease-in-out;
   & > div {
@@ -113,7 +118,7 @@ background-color: var(--c-negro-landing-page);
         font-family: 'Mukta', sans-serif;
         font-weight: 600;
         font-size: 1.25rem;
-        color: var(--c-blanco);
+        color: var(--c-navegador-letter);
         &:hover {
           color: var(--c-dorado-fino)
         }
@@ -156,12 +161,11 @@ min-height: 100vh;
 }
 
 #titulo, #home {
-color: var(--c-white-pure);
+color: var(--c-navegador-letter);
 overflow: hidden;
 width:100%;
 position: relative;
 height: 100vh;
-border-bottom: 2px solid var(--c-dorado);
 & > div:nth-of-type(2) {
   opacity: .4;
 }
@@ -179,7 +183,10 @@ border-bottom: 2px solid var(--c-dorado);
   width: 100%;
   margin: 0 auto;
   font-size: 1.5rem;
-  
+  background-image: url('https://i.imgur.com/FcESbYT.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   > div {
     display: flex;
     width: 60ch;
@@ -202,7 +209,15 @@ border-bottom: 2px solid var(--c-dorado);
       opacity: .9;    
     }
   }
-  
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--c-black);
+    opacity: .5;
+    z-index: -1;
+  }
 }
 
 .btn-show-all {
@@ -213,13 +228,13 @@ border-bottom: 2px solid var(--c-dorado);
   padding: 15px;
   border-radius: 50px; 
   margin: 0px auto;
-  box-shadow: 1px 1px 10px var(--c-main);
+  box-shadow: 1px 1px 10px var(--c-sky);
   font-family:"Monserrat";
   font-weight: 900;
   transition: all 0.3s ease-out;
   transition-duration: 0.4s;
   box-sizing: border-box;
-  border: 2px solid var(--c-white-pure);
+  border: 2px solid var(--c-fondo-sky);
   background-image: linear-gradient(to right, transparent, transparent), linear-gradient(to right, var(--c-sky), var(--c-sky));
   background-position: left top;
   background-repeat: no-repeat;
@@ -241,50 +256,46 @@ border-bottom: 2px solid var(--c-dorado);
   width: 100%;
   font-size: 32.5px;
   font-family: 'fondamento';
+  color: var(--v-letter-1)
 }
 
 /*Skills*/
 
 #habilidades, #skills {
-  text-align: center;
-  border-top: 2px solid var(--c-dorado);
-  
+  text-align: center;  
 }
 
 #habilidades > p, #skills > p {
   font-family: 'Fondamento';
-  padding-top: 75px;
   font-size: 32.5px;
-  color: var(--c-white-pure);
+  color: var(--v-letter-1);
   text-align: center;
 }
 
-#contacto  div  a  img, #contact div a img {
+#contacto div a img, #contact div a img {
   width: 50px;
   height: 50px;
   margin: 29px;
   padding: 1px;
   border-radius: 50px;
   box-shadow: 1px 1px 10px 1px var(--c-white-pure);
-
+  border: 1px solid skyblue;
+  transition: scale .3s ease;
 }
 
-#contacto button, #contacto button {
-  background-color: orange;
+#contacto button {
   border-radius: 15px;
   border: none;
   padding: 12.5px;
   font-size: 20px;
   margin: 40px auto;
   cursor: pointer;
-  box-shadow: 1px 1px 10px #efb810;
+  box-shadow: 1px 1px 10px var(--c-sky);
   color: var(--c-white-pure);
   font-weight: 600;
 }
 
 #contacto, #contact {
-  border-top: 2px solid var(--c-dorado);
-  padding: 5em 0 0;
   width: 100%;
   margin-top: 0px;
   text-align: center;
@@ -295,32 +306,30 @@ border-bottom: 2px solid var(--c-dorado);
 #contacto p, #contact p {
   margin: 0 auto;
   font-size: 32.5px;
-  color: var(--c-white-pure);  
+  color: var(--v-letter-1); 
 }
 
 form > div > label {
   font-size: 20px;
-  color: var(--c-white-pure);  
+  color: var(--c-black);  
 }
 
 form > div > input, textarea {
-  background-color: var(--c-fondo-sky-transparent);
+  background-color: var(--c-blanco-suave);
   width: 75%;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   margin: 15px 0px;
-  color: #1c1c1c;
   font-size: 18px;
   padding: 10px;
-  color: var(--c-white-pure);
-  font-weight: 500
+  font-weight: 500;
+
 }
 
 form > div > input::placeholder, input {  
   font-size: 18px;
   height: 40px;
-  text-align: center;
 }
 
 
@@ -331,7 +340,7 @@ footer {
   display: flex;    
   align-items: center;
   justify-content: center;
-  color: var(--c-dorado-fino);
+  color: var(--c-azul-facebook);
   font-weight: 900;
   
 }
@@ -360,7 +369,7 @@ footer {
 
 #contacto a img:hover {
   border:1px solid #efb810;
-  background-color: #efb810; 
+  scale: 1.1;
 }
 
 .btn-show-all:hover {
@@ -392,7 +401,7 @@ footer {
 }
 
 .proyecto {
-  background-color: var(--c-fondo-sky-transparent);
+  background-color: var(--c-fondo-sky);
   font-size: 2rem;
   padding: .5rem 0;
   border: 5px solid skyblue;
@@ -572,7 +581,7 @@ footer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: rgba(50, 173, 255, 0.4) !important;
+  background-color: var(--c-sky);
   transition: all .5s ease-in-out;
   border-radius: 0.5rem;
   left: 0%;
@@ -589,13 +598,14 @@ footer {
 
 #habilidades span::after, #skills span::after {
   border: 7px solid transparent;
-  border-top-color: var(--c-fondo-sky-transparent);
+  border-top-color: var(--c-sky);
   content: '';
   left:50%;
   z-index: 999;
   margin-left: -5px;
   position: absolute;
   top: 100%;  
+
 }
 
 .ver-span {
@@ -680,7 +690,11 @@ footer {
     display: flex;
   }
 
+  #navbar.toogle {
+    display: flex !important
+  }
   #navbar {
+    display:none;
     flex-direction: column;
     padding: 0;
     padding-top: 4.1rem;
