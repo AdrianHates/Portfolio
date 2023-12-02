@@ -74,6 +74,6 @@ export const proyectos=[
 ]
 
 export const description = {
-  es: "Soy un programador frontend apasionado y adaptable con experiencia en proyectos desafiantes. Comprometido con el aprendizaje continuo y listo para nuevos desafíos en un entorno tecnológico en constante evolución.",
-  en: "I am a passionate and adaptable frontend programmer with experience in challenging projects. Committed to continuous learning and ready for new challenges in a constantly evolving technological environment."
+  es: "Soy muy apasionado y comprometido con la programación y las ciencias exactas. Llevo alrededor de un año y medio formándome y he realizado algunos trabajos, desde landing pages hasta sitios web profesionales. Mis conocimientos abarcan el desarrollo fullstack, con un mayor dominio en el frontend utilizando JS y React, y en el backend con Node.js y Python.",
+  en: "I am very passionate and committed to programming and exact sciences. I have been educating myself for about a year and a half and have completed various projects, ranging from landing pages to professional websites. My expertise covers full-stack development, with a stronger focus on the frontend using JS and React, and on the backend with Node.js and Python."
 }
