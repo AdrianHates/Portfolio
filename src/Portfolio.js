@@ -98,14 +98,13 @@ function Portfolio () {
           <hr id='he' />
           <div id='columnas'>          
             {proyectos.map((x,i)=><Proyecto key={i} src={x.src} href={x.href} descripcion={x.descripcion} texto={x.texto} code={x.code} tecnology={x.tecnology}/>)}
-         
           </div>
           <div id='enlace'>        
           <Enlace href='https://codepen.io/Fade-Out' text={idioma==='ES'?'Mostrar':'Show All'} />
           </div>
         </section>        
         <section id={`${idioma==='ES'?'habilidades':'skills'}`} ref={el => (elementsRef.current[2] = el)}>
-          <p>{idioma==='ES'?'Habilidades':'Skillset'}</p>
+          <p>{idioma==='ES'?'HABILIDADES':'SKILLSET'}</p>
           <hr className='hw' />
           {/*<div className='prueba'>
           */}
@@ -121,6 +120,5 @@ function Portfolio () {
     )
   
 }
-
 
 export default Portfolio;
