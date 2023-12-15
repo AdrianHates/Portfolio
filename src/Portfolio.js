@@ -54,7 +54,7 @@ function Portfolio () {
 
     ScrollReveal().reveal('section', { distance: '20px', origin: 'bottom', duration: 1000 });
 
-    let a = document.getElementById('bloque').querySelector('h3');
+    let a = document.getElementById('bloque').querySelector('p > span');
     escribirFrase(a)
     window.addEventListener('resize', () => {
       if(window.innerWidth >= 1000) {

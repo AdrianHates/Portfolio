@@ -8,10 +8,11 @@ const Titulo = ({ id, name, src }) => {
         <div id={id} ref={el => (elementsRef.current[0] = el)}>
             <div id='bloque'>
               <div>
-                <p>{idioma==='ES'?'Hola, mi nombre es':'Hello my name is'}</p>              
-                <div><h3></h3><span id="cursor">|</span></div>
-              
-              <p>{idioma==='ES'? description.es:description.en}</p>
+                <p>{idioma==='ES'?'Hola, mi nombre es ':'Hello my name is '}<span></span><span id="cursor">|</span></p>
+                
+                <p>{idioma==='ES'? description.es[0]:description.en[0]}</p>
+                <p>{idioma==='ES'? description.es[1]:description.en[1]}</p>
+             
 
               </div>
 

@@ -189,25 +189,28 @@ height: 100vh;
   background-attachment: fixed;
   > div {
     display: flex;
-    width: 60ch;
     text-align: left;
     flex-direction: column;
     animation: aparecer-punto-centro 1s ease-out forwards;
+    width: 80ch;  
+    gap: .8rem;
     & > div {
       flex-wrap: wrap;
       display: flex;
       align-items: center;
       
-      & > h3 {
-        color: var(--c-dorado);
-        height: 37px
-
-      }
+      
       
     }
     & > p {
-      opacity: .9;    
+      opacity: .9;
+      & > span:first-of-type {
+        color: var(--c-dorado);
+
+        font-weight: 1000;
+      }    
     }
+    
   }
 }
 
@@ -729,5 +732,9 @@ footer {
   }
 }
 
-
-
+@media (max-width: 843px) {
+  #bloque > div {
+    height: 80%;
+    overflow-y: scroll;
+  }
+}
