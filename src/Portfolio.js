@@ -2,7 +2,7 @@ import './App.css';
 import React, { useEffect, useState, useRef, createContext } from 'react';
 import Proyecto from './componentes/Proyecto';
 import Enlace from './componentes/Enlace';
-import Titulo from './componentes/Titulo';
+import Titulo from './componentes/Titulo/Titulo';
 import Contact from './componentes/Contact';
 import Navbar from './componentes/Navbar';
 /*Datos*/
@@ -46,6 +46,7 @@ function Portfolio () {
   const [nav, setNav] = useState(false)
   const [idioma, setIdioma] = useState('ES')
   const [modo, setModo] = useState('Dark')
+  const [filtro, setFiltro] = useState('all')
   const name = 'Herless Oliver Ramos Espinoza'
   let i = 0;
   let direction = 'derecha'
@@ -88,6 +89,17 @@ function Portfolio () {
   function toggleFunction () {
     setNav(!nav)
   }
+
+  function filterProyects(array) {
+    if(filtro === 'all') {
+      return array
+    } else {
+      return array.filter(x=> x.categoria === filtro)
+    }     
+  }
+  function establecerFiltro(filtro) {
+    setFiltro(filtro)
+  }
     return (
       <ElementsContext.Provider value={ { elementsRef, nav, idioma, setIdioma, modo, setModo } }>      
       <div id='todo'>
@@ -96,12 +108,19 @@ function Portfolio () {
         <section id={`${idioma==='ES'?'portafolio':'portfolio'}`} ref={el => (elementsRef.current[1] = el)}>
           <p>{idioma==='ES'?'PORTAFOLIO':'PORTFOLIO'}</p>
           <hr id='he' />
+          <div>
+            <div style={filtro==='all'? {color: 'white', backgroundColor:'var(--c-dorado-fino)', borderBottom: '2px solid var(--c-dorado-fino)'}:{}} onClick={()=>{establecerFiltro('all')}}>{idioma==='ES'?'Todo':'All'}</div>
+            <div style={filtro==='web'? {color: 'white', backgroundColor:'var(--c-dorado-fino)', borderBottom: '2px solid var(--c-dorado-fino)'}:{}}  onClick={()=>{establecerFiltro('web')}}>{idioma==='ES'?'Web':'Web'}</div>
+            <div style={filtro==='game'? {color: 'white', backgroundColor:'var(--c-dorado-fino)', borderBottom: '2px solid var(--c-dorado-fino)'}:{}}  onClick={()=>{establecerFiltro('game')}}>{idioma==='ES'?'Juego':'Game'}</div>
+            <div style={filtro==='app'? {color: 'white', backgroundColor:'var(--c-dorado-fino)', borderBottom: '2px solid var(--c-dorado-fino)'}:{}}  onClick={()=>{establecerFiltro('app')}}>{idioma==='ES'?'Aplicación':'App'}</div>
+
+          </div>
           <div id='columnas'>          
-            {proyectos.map((x,i)=><Proyecto key={i} src={x.src} href={x.href} descripcion={x.descripcion} texto={x.texto} code={x.code} tecnology={x.tecnology}/>)}
+            {filterProyects(proyectos).map((x,i)=><Proyecto key={i} src={x.src} href={x.href} descripcion={x.descripcion} texto={x.texto} code={x.code} tecnology={x.tecnology}/>)}
           </div>
-          <div id='enlace'>        
+          {/*<div id='enlace'>        
           <Enlace href='https://codepen.io/Fade-Out' text={idioma==='ES'?'Mostrar':'Show All'} />
-          </div>
+          </div>*/}
         </section>        
         <section id={`${idioma==='ES'?'habilidades':'skills'}`} ref={el => (elementsRef.current[2] = el)}>
           <p>{idioma==='ES'?'HABILIDADES':'SKILLSET'}</p>

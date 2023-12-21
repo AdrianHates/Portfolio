@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
-import { ElementsContext } from "../Portfolio";
-import { description } from '../Datos/datos';
+import { ElementsContext } from "../../Portfolio";
+import { description } from '../../Datos/datos';
+import './Titulo.css'
+
 const Titulo = ({ id, name, src }) => {
   const { elementsRef, idioma } = useContext(ElementsContext)
 

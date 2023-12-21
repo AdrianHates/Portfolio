@@ -1,7 +1,17 @@
 export const proyectos=[
   {
+    texto: 'Template-home-adidas',
+    categoria: 'web',
+    src: 'https://i.imgur.com/QIJGBpI.jpg',
+    href: 'https://adrianhates.github.io/template-ecommerce/',
+
+    tecnology: ['html', 'css', 'javascript', 'react']
+
+
+  },
+  {
     texto: 'TiendaVirtualFull',
-    categoria: 'ecommerce',
+    categoria: 'web',
     src: 'https://i.imgur.com/9glzzTY.png',
     href: 'https://tiendavirtualfull.onrender.com/',
     code: 'https://github.com/AdrianHates/tiendavirtualfull',
@@ -23,6 +33,7 @@ export const proyectos=[
       tecnology: ['html', 'css', 'javascript', 'liquid']
   }, {
       texto: 'Pokemon Emerald',
+      categoria: 'game',
       code: 'https://github.com/AdrianHates/pokemon',
       src: 'https://i.imgur.com/TqhwpZw.jpg',
       href: 'https://adrianhates.github.io/pokemon',
@@ -31,26 +42,27 @@ export const proyectos=[
 
   }, {
     texto: 'Changomon',
+    categoria: 'game',
     code: 'https://github.com/AdrianHates/game-simon',
     src: 'https://i.imgur.com/KshiWbY.png',
     href: 'https://adrianhates.github.io/game-simon/',
     tecnology: ['html', 'css', 'javascript', 'react']
   }, {
     texto: 'Game of Life',
-    categoria: 'desk',
+    categoria: 'app',
     code: 'https://github.com/AdrianHates/gameoflife',
     src: 'https://imgur.com/G0ebZTb.png', 
     href: 'https://adrianhates.github.io/gameoflife/',
     tecnology: ['html', 'css', 'javascript', 'react']
   }, {
     texto: 'Calculadora',
-    categoria: 'desk',
+    categoria: 'app',
     src: 'https://i.imgur.com/aau1G4X.png', 
     href: 'https://codepen.io/Fade-Out/full/PoaozoV',
     tecnology: ['html', 'css', 'javascript', 'react']
   }, {
     texto: 'Tres Raya',
-    categoria: 'app',
+    categoria: 'game',
     code: 'https://github.com/AdrianHates/tresraya/tree/master',
     src: 'https://i.imgur.com/f4iby7R.png', 
     href: 'https://adrianhates.github.io/tresraya/',
@@ -58,7 +70,7 @@ export const proyectos=[
 
   }, {
     texto: 'Tetris',
-    categoria: 'desk',
+    categoria: 'game',
     code: 'https://github.com/AdrianHates/Tetris',
     src: 'https://i.imgur.com/eIazWJO.png',
     href: 'https://adrianhates.github.io/Tetris/',
@@ -66,7 +78,7 @@ export const proyectos=[
   },
   {
     texto: '25 + 5 Clock',
-    categoria: 'desk',
+    categoria: 'app',
     src: 'https://i.imgur.com/mBLN4mR.png', 
     href: 'https://codepen.io/Fade-Out/full/dyKGNJO',
     tecnology: ['html', 'css', 'javascript', 'react']

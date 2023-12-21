@@ -1,0 +1,74 @@
+#titulo, #home {
+  color: var(--c-navegador-letter);
+  overflow: hidden;
+  width:100%;
+  position: relative;
+  height: 100vh;
+  & > div:nth-of-type(2) {
+    opacity: .4;
+  }
+  }
+  
+  #bloque {
+    position: relative;  
+    z-index: 1;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    background-image: url('https://i.imgur.com/FcESbYT.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    > div {
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      animation: aparecer-punto-centro 1s ease-out forwards;
+      width: 80ch;  
+      gap: .8rem;
+      & > div {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        
+        
+        
+      }
+      & > p {
+        opacity: .9;
+        & > span:first-of-type {
+          color: var(--c-dorado);
+  
+          font-weight: 1000;
+        }    
+      }
+      
+    }
+  }
+  
+  #bloque::after {
+  
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--c-black);
+    opacity: .5;
+    z-index: -1;
+    
+  }
+
+  #titulo img, #home img {  
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    left:0%;
+    top:0%;
+    min-height: 100vh;
+    }

@@ -151,81 +151,6 @@ background-color: var(--v-background-0);
   color: var(--c-dorado-fino) !important
 }
 
-#titulo img, #home img {  
-width: 100%;
-position: absolute;
-object-fit: cover;
-left:0%;
-top:0%;
-min-height: 100vh;
-}
-
-#titulo, #home {
-color: var(--c-navegador-letter);
-overflow: hidden;
-width:100%;
-position: relative;
-height: 100vh;
-& > div:nth-of-type(2) {
-  opacity: .4;
-}
-}
-
-#bloque {
-  position: relative;  
-  z-index: 1;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: left;
-  width: 100%;
-  margin: 0 auto;
-  font-size: 1.5rem;
-  background-image: url('https://i.imgur.com/FcESbYT.jpg');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  > div {
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    animation: aparecer-punto-centro 1s ease-out forwards;
-    width: 80ch;  
-    gap: .8rem;
-    & > div {
-      flex-wrap: wrap;
-      display: flex;
-      align-items: center;
-      
-      
-      
-    }
-    & > p {
-      opacity: .9;
-      & > span:first-of-type {
-        color: var(--c-dorado);
-
-        font-weight: 1000;
-      }    
-    }
-    
-  }
-}
-
-#bloque::after {
-
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: var(--c-black);
-  opacity: .5;
-  z-index: -1;
-  
-}
-
 .btn-show-all {
   text-decoration: none;
   color: var(--c-white-pure);
@@ -363,7 +288,6 @@ footer {
   background-image: linear-gradient(to right,transparent,var(--c-sky),transparent);
   height: 0.175rem;
   border: 0;
-  margin-bottom: 100px;
 }
 
 .hw {
@@ -418,7 +342,7 @@ footer {
   gap: 1rem;
   position: relative;
   transition: box-shadow 0.5s ease, border-radius 0.5s ease;
-  
+  overflow: hidden;
   & > div:first-of-type {
     padding: 1rem 0;
     display: flex;
@@ -452,7 +376,7 @@ footer {
           transition: background-color .5s ease-out;
           &:hover {
             background-color: var(--c-dorado-button);
-            
+
           }
 
         }      
@@ -510,7 +434,6 @@ footer {
     & > div:nth-of-type(2) {
       background-color: var(--c-negro-landing-page);
       opacity: 0.5;
-       
     }
     & > div:first-of-type {
       z-index: 1;
@@ -518,10 +441,14 @@ footer {
     & > div:nth-of-type(3) {
       opacity: 1;
     }
+    & img {
+      scale: 1.05
+    }
   }
 }
 
 .proyecto-img {
+  transition: scale 0.5s ease;
   width: 350px;
   object-fit: contain;
   border: 1px solid black;
@@ -529,10 +456,33 @@ footer {
   border-radius: 3px;
   background-color: rgba(0,0,0,0.8);
   color: var(--c-white-pure);
+  
   }
 
 #portafolio, #portfolio {
   color:var(--c-white-pure);
+  & > div:first-of-type {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-sky);
+    padding: 50px 0;
+    & > div {
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      border-bottom: 2px solid transparent;
+      padding: .5rem;
+      border-radius: 10px;
+      transition: background-color .3s ease;
+      &:hover {
+        background-color: var(--c-dorado-fino);
+        color: white
+      }
+    }
+  }
 }
 
 
@@ -560,8 +510,10 @@ footer {
   display: none !important
 }
 
+#habilidades {
+  padding: 100px 2rem 0;
+}
 #habilidades > div, #skills > div {
-  padding: 50px 0;
   & button {
     display: none !important;
   }
@@ -736,5 +688,12 @@ footer {
   #bloque > div {
     height: 80%;
     overflow-y: scroll;
+  }
+}
+
+@media (max-width: 600px) {
+  #portafolio > div:first-of-type {
+    
+    flex-direction:column;
   }
 }
