@@ -196,6 +196,17 @@ background-color: var(--v-background-0);
   text-align: center;  
 }
 
+#habilidades, #skills {
+  padding: 100px 2rem 0;
+}
+
+#habilidades > div, #skills > div {
+  padding: 2.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+}
+
 #habilidades > p, #skills > p {
   font-family: 'Fondamento';
   font-size: 32.5px;
@@ -255,14 +266,12 @@ form > div > input, textarea {
   font-size: 18px;
   padding: 10px;
   font-weight: 500;
-
 }
 
 form > div > input::placeholder, input {  
   font-size: 18px;
   height: 40px;
 }
-
 
 footer {
   font-size: 12px;
@@ -510,9 +519,6 @@ footer {
   display: none !important
 }
 
-#habilidades {
-  padding: 100px 2rem 0;
-}
 #habilidades > div, #skills > div {
   & button {
     display: none !important;
@@ -540,7 +546,7 @@ footer {
   justify-content: center;
   width: 100%;
   background-color: var(--c-sky);
-  transition: all .5s ease-in-out;
+  transition: all .5s ease-out;
   border-radius: 0.5rem;
   left: 0%;
   position: relative;

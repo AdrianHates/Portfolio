@@ -8,7 +8,7 @@ import Navbar from './componentes/Navbar';
 /*Datos*/
 import { proyectos } from './Datos/datos';
 import ScrollReveal from 'scrollreveal';
-import SimpleSlider from './componentes/Slider';
+import SimpleSlider from './componentes/Skillset';
 export const ElementsContext = createContext()
 
 const navDashEs = [ {
