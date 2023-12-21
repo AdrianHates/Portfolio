@@ -306,7 +306,7 @@ footer {
   height: 0.15rem;
 }
 
-#contacto a img:hover {
+#contacto a img:hover, #contact a img:hover {
   border:1px solid #efb810;
   scale: 1.1;
 }
