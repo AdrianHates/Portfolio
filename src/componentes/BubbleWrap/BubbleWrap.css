@@ -1,0 +1,88 @@
+.bubble-wrap > div {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  z-index: 999;
+  &:first-of-type {
+    animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    background-color: #ffb739;
+    left: 6%;
+    top: 45%;
+  }
+  &:nth-of-type(2) {
+    animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    background-color: #fc4fdd;
+    left: 5%;
+    top: 80%;
+  }
+  &:nth-of-type(3) {
+    animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    background-color: #5ed5cb;
+    left: 10%;
+    top: 40%;
+  }
+  &:nth-of-type(4) {
+    animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    background-color: #3de4a3;
+    left: 20%;
+    top: 0%;
+  }
+  &:nth-of-type(5) {
+    animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    background-color: #fc4fb1;
+    left: 30%;
+    top: 50%;
+  }
+  &:nth-of-type(6) {
+    animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    background-color: #2c4aff;
+    left: 50%;
+    top: 0%;
+  }
+  &:nth-of-type(7) {
+    animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    background-color: #ffb739;
+    left: 65%;
+    top: 70%;
+  }
+  &:nth-of-type(8) {
+    animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    background-color: #8f3de4;
+    left: 80%;
+    top: 10%;
+  }
+  &:nth-of-type(9) {
+    animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    background-color: #fff339;
+    left: 90%;
+    top: 50%;
+  }
+  &:last-of-type {
+    animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    background-color: #fc4f4f;
+    left: 80%;
+    top: 80%;
+  }
+  
+}
+
+
+@keyframes animateBubble {
+  0% {
+    margin-top: 20%;
+  }
+  100% {
+    margin-top: -30%;
+  }  
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0;
+  }
+100% {
+    margin-left: 25px;
+  }
+  
+}

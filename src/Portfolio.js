@@ -9,6 +9,8 @@ import Navbar from './componentes/Navbar';
 import { proyectos } from './Datos/datos';
 import ScrollReveal from 'scrollreveal';
 import SimpleSlider from './componentes/Skillset';
+import BubbleWrap from './componentes/BubbleWrap/BubbleWrap';
+import WS from './componentes/WS/WS.js';
 export const ElementsContext = createContext()
 
 const navDashEs = [ {
@@ -134,7 +136,11 @@ function Portfolio () {
         {idioma==='ES'?`Desarrollado y diseñado por ${name}. ©2022. Todos los derechos reservados.`:`Developed and designed by ${name}. ©2022. All rights reserved.`}
         </footer>
         <div id='toggle' onClick={toggleFunction}>☰</div>
+        <BubbleWrap object={true} />
+        <WS object='51914315964' />
+
       </div>
+
       </ElementsContext.Provider>
     )
   

@@ -81,7 +81,7 @@ function Navegador( { logo, navDashEs, navDashEn } ) {
       </ul>
     </nav>
     {
-      arrow &&(<a href={idioma==='ES'?'#titulo':'#home'} id='arrow'>
+      false &&(<a href={idioma==='ES'?'#titulo':'#home'} id='arrow'>
         <img src={flecha} alt ='flecha' style={{width:'100%', padding:'.5rem'}} />
       </a> )
     }
