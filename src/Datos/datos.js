@@ -1,5 +1,11 @@
 export const proyectos=[
   {
+    texto: 'Landing-page Web',
+    categoria: 'web',
+    src: 'https://i.imgur.com/R2Fdi1P.jpg',
+    href: 'https://adrianhates.github.io/landingpageweb/'
+  },
+  {
     texto: 'Template-home-adidas',
     categoria: 'web',
     src: 'https://i.imgur.com/QIJGBpI.jpg',
