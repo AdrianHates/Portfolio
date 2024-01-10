@@ -10,7 +10,7 @@ const Contact = ( { id } ) => {
   <section id={id} ref={el => (elementsRef.current[3] = el)}>
       <p>{idioma==='ES'?'CONTACTO':'CONTACT'}</p>
       <hr className='hw' />
-      <form action="https://formsubmit.co/kurono1807@gmail.com" method="POST" aria-labelledby='datos-contacto'>
+      <form action="https://formspree.io/f/xzbnzbyn" method="POST" aria-labelledby='datos-contacto'>
         <div>
           <label htmlFor='email'>{idioma==='ES'?'Correo electrónico':'email'}:</label><br />
           <input type='email' placeholder={idioma==='ES'?'correo electrónico':'email'} name='email' required></input>
