@@ -18,7 +18,7 @@ export const proyectos=[
   {
     texto: 'TiendaVirtualFull',
     categoria: 'web',
-    src: 'https://i.imgur.com/9glzzTY.png',
+    src: 'https://i.imgur.com/g7yP0ue.jpg',
     href: 'https://tiendavirtualfull.onrender.com/',
     code: 'https://github.com/AdrianHates/tiendavirtualfull',
     tecnology: ['html', 'css', 'javascript', 'react', 'node', 'mongo']
