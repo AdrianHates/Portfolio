@@ -3,7 +3,9 @@ export const proyectos=[
     texto: 'Landing-page Web',
     categoria: 'web',
     src: 'https://i.imgur.com/R2Fdi1P.jpg',
-    href: 'https://adrianhates.github.io/landingpageweb/'
+    href: 'https://adrianhates.github.io/landingpageweb/',
+    tecnology: ['html', 'css', 'javascript', 'react']
+
   },
   {
     texto: 'Template-home-adidas',
@@ -29,14 +31,6 @@ export const proyectos=[
     src: 'https://i.imgur.com/ckxyMmY.png',
     href: 'https://adrianhates.github.io/fastestfood/',
     tecnology: ['html', 'css', 'javascript', 'jquery'],
-  }, {
-    
-      texto: 'Chile Hogar',
-      code: null,
-      categoria: 'web',
-      src: 'https://i.imgur.com/DLQpWGF.jpg', 
-      href: 'https://productos-hogar-cl.myshopify.com/',
-      tecnology: ['html', 'css', 'javascript', 'liquid']
   }, {
       texto: 'Pokemon Emerald',
       categoria: 'game',
