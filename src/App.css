@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
-:root{
+:root {
   --c-main: rgb(129, 31, 31);
   --c-black: #1c1c1c;
   --c-sky: #4e89a7;
@@ -51,9 +51,9 @@
 }
 
 html {
-scroll-behavior: smooth;
--webkit-text-size-adjust: 100%;  
-background-color: var(--v-background-0);
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--v-background-0);
 }
 
 #arrow {
@@ -70,13 +70,14 @@ background-color: var(--v-background-0);
   animation: aparecer-arriba 1s forwards;
   z-index: 10;
 }
+
 /*Navegador*/
 
 #navbar {
   top: 0;
   width: 100%;
   font-size: 15px;
-  text-align: center; 
+  text-align: center;
   position: fixed;
   z-index: 999;
   display: flex;
@@ -86,7 +87,8 @@ background-color: var(--v-background-0);
   color: var(--c-navegador-letter);
   font-family: "Montserrat";
   transition: all .3s ease-in-out;
-  & > div {
+
+  &>div {
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -94,59 +96,71 @@ background-color: var(--v-background-0);
     border: 2px solid var(--c-sky);
 
     justify-content: center;
-    & > label {
+
+    &>label {
       padding: .5rem 1rem;
       cursor: pointer;
 
     }
-    & > button {
+
+    &>button {
       padding: .5rem;
       cursor: pointer;
 
     }
-    & > button:hover {
+
+    &>button:hover {
       background-color: var(--c-dorado-button);
     }
   }
-  & > ul {
+
+  &>ul {
     gap: 1rem;
-    & > li {
+
+    &>li {
       list-style-type: none;
-      
-      & > a {
+
+      &>a {
         text-decoration: none;
         font-family: 'Mukta', sans-serif;
         font-weight: 600;
         font-size: 1.25rem;
         color: var(--c-navegador-letter);
+
         &:hover {
           color: var(--c-dorado-fino)
         }
       }
-      
+
     }
-    & > li:first-of-type {
+
+    &>li:first-of-type {
       animation: aparecer .4s ease-out forwards;
     }
-    & > li:nth-of-type(2) {
+
+    &>li:nth-of-type(2) {
       animation: aparecer .6s ease-out forwards
     }
-    & > li:nth-of-type(3) {
+
+    &>li:nth-of-type(3) {
       animation: aparecer .8s ease-out forwards
     }
-    & > li:nth-of-type(4) {
+
+    &>li:nth-of-type(4) {
       animation: aparecer 1s ease-out forwards
     }
-    
+
   }
 }
-#navbar > ul {
+
+#navbar>ul {
   display: flex;
 }
 
 .scrolled {
-  background-color: var(--c-fondo-sky) ;
+  background-color: var(--c-fondo-sky);
 }
+
 .active {
   color: var(--c-dorado-fino) !important
 }
@@ -154,13 +168,13 @@ background-color: var(--v-background-0);
 .btn-show-all {
   text-decoration: none;
   color: var(--c-white-pure);
-  background-color:var(--c-black);
+  background-color: var(--c-black);
   font-size: 20px;
   padding: 15px;
-  border-radius: 50px; 
+  border-radius: 50px;
   margin: 0px auto;
   box-shadow: 1px 1px 10px var(--c-sky);
-  font-family:"Monserrat";
+  font-family: "Monserrat";
   font-weight: 900;
   transition: all 0.3s ease-out;
   transition-duration: 0.4s;
@@ -181,40 +195,56 @@ background-color: var(--v-background-0);
   margin: 100px 0;
 }
 
-#portafolio > :first-child, #portfolio > :first-child {
+#portafolio> :first-child,
+#portfolio> :first-child {
   padding: 100px 0 50px 0;
   text-align: center;
   width: 100%;
   font-size: 32.5px;
   font-family: 'fondamento';
-  color: var(--v-letter-1)
+  color: var(--v-letter-1);
 }
 
 /*Skills*/
 
-#habilidades, #skills {
-  text-align: center;  
+#habilidades,
+#skills {
+  text-align: center;
 }
 
-#habilidades, #skills {
+#habilidades,
+#skills {
   padding: 100px 2rem 0;
 }
 
-#habilidades > div, #skills > div {
+#habilidades>div,
+#skills>div {
   padding: 2.5rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2.5rem;
 }
 
-#habilidades > p, #skills > p {
+#habilidades>p,
+#skills>p {
   font-family: 'Fondamento';
   font-size: 32.5px;
   color: var(--v-letter-1);
   text-align: center;
 }
 
-#contacto div a img, #contact div a img {
+@media (max-width:640px) {
+
+  #habilidades>p,
+  #skills>p {
+    font-size: 24.5px;
+
+  }
+
+}
+
+#contacto div a img,
+#contact div a img {
   width: 50px;
   height: 50px;
   margin: 29px;
@@ -237,7 +267,8 @@ background-color: var(--v-background-0);
   font-weight: 600;
 }
 
-#contacto, #contact {
+#contacto,
+#contact {
   width: 100%;
   margin-top: 0px;
   text-align: center;
@@ -245,18 +276,20 @@ background-color: var(--v-background-0);
 
 }
 
-#contacto p, #contact p {
+#contacto p,
+#contact p {
   margin: 0 auto;
   font-size: 32.5px;
-  color: var(--v-letter-1); 
+  color: var(--v-letter-1);
 }
 
-form > div > label {
+form>div>label {
   font-size: 20px;
-  color: var(--c-black);  
+  color: var(--c-black);
 }
 
-form > div > input, textarea {
+form>div>input,
+textarea {
   background-color: var(--c-blanco-suave);
   width: 75%;
   border: none;
@@ -268,7 +301,8 @@ form > div > input, textarea {
   font-weight: 500;
 }
 
-form > div > input::placeholder, input {  
+form>div>input::placeholder,
+input {
   font-size: 18px;
   height: 40px;
 }
@@ -276,38 +310,39 @@ form > div > input::placeholder, input {
 footer {
   font-size: 12px;
   background-color: var(--c-fondo-sky-transparent);
-  height: 75px;
-  display: flex;    
+  min-height: 75px;
+  display: flex;
   align-items: center;
   justify-content: center;
   color: var(--c-azul-facebook);
   font-weight: 900;
-  
+  padding: 10px;
 }
 
 #hr {
   top: 235px;
   position: relative;
-  background-image: linear-gradient(to right,transparent,var(--c-sky),transparent);
+  background-image: linear-gradient(to right, transparent, var(--c-sky), transparent);
   height: 0.15rem;
   border: 0;
 }
 
 #he {
-  background-image: linear-gradient(to right,transparent,var(--c-sky),transparent);
+  background-image: linear-gradient(to right, transparent, var(--c-sky), transparent);
   height: 0.175rem;
   border: 0;
 }
 
 .hw {
-  background-image: linear-gradient(to right,transparent,var(--c-sky),transparent);
+  background-image: linear-gradient(to right, transparent, var(--c-sky), transparent);
   border: 0;
   margin: 40px auto;
   height: 0.15rem;
 }
 
-#contacto a img:hover, #contact a img:hover {
-  border:1px solid #efb810;
+#contacto a img:hover,
+#contact a img:hover {
+  border: 1px solid #efb810;
   scale: 1.1;
 }
 
@@ -318,6 +353,7 @@ footer {
   color: var(--c-dorado-fino);
   background-size: 100% 100%;
 }
+
 .btn-show-all:active {
   background-image: linear-gradient(to right, transparent, transparent), linear-gradient(to right, #efb810, #efb810);
   background-color: #efb810;
@@ -329,14 +365,32 @@ footer {
 /*Portafolio*/
 
 #columnas {
-  display: grid;  
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   row-gap: 5rem;
   column-gap: 1rem;
   margin: 0 auto;
   padding: 0 26px;
   max-width: 1280px;
   justify-items: center
+}
+
+@media (max-width:640px) {
+  #columnas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 5rem;
+    column-gap: 1rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 1280px;
+    justify-items: center
+  }
+
+  footer {
+    font-size: 10px;
+
+  }
 }
 
 .proyecto {
@@ -352,46 +406,50 @@ footer {
   position: relative;
   transition: box-shadow 0.5s ease, border-radius 0.5s ease;
   overflow: hidden;
-  & > div:first-of-type {
+
+  &>div:first-of-type {
     padding: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-        & > a:first-of-type {
-          background-color: var(--c-negro-landing-page);
-          padding: .5rem 1rem;
-          border-radius: 5px;
-          text-decoration: none;
-          font-size: 15px;
-          color: var(--c-blanco-suave);
-          font-weight: 700;
-          letter-spacing: 2px;
-          transition: background-color .5s ease-out;
+    &>a:first-of-type {
+      background-color: var(--c-negro-landing-page);
+      padding: .5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 15px;
+      color: var(--c-blanco-suave);
+      font-weight: 700;
+      letter-spacing: 2px;
+      transition: background-color .5s ease-out;
 
-          &:hover {
-            background-color: var(--c-dorado-button);
-          }
-        }
-        & > a:nth-of-type(2) {
-          background-color: var(--c-azul-linkedin);
-          padding: .5rem 1rem;
-          border-radius: 5px;
-          text-decoration: none;
-          font-size: 15px;
-          color: var(--c-white-pure);
-          font-weight: 700;
-          letter-spacing: 2px;
-          transition: background-color .5s ease-out;
-          &:hover {
-            background-color: var(--c-dorado-button);
+      &:hover {
+        background-color: var(--c-dorado-button);
+      }
+    }
 
-          }
+    &>a:nth-of-type(2) {
+      background-color: var(--c-azul-linkedin);
+      padding: .5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 15px;
+      color: var(--c-white-pure);
+      font-weight: 700;
+      letter-spacing: 2px;
+      transition: background-color .5s ease-out;
 
-        }      
-    
+      &:hover {
+        background-color: var(--c-dorado-button);
+
+      }
+
+    }
+
   }
-  & > div:nth-of-type(2) {
+
+  &>div:nth-of-type(2) {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -402,9 +460,10 @@ footer {
     background-color: var(--c-negro-landing-page);
     opacity: 0;
     transition: opacity .5s ease-in-out;
-    
+
   }
-  & > div:nth-of-type(3) {
+
+  &>div:nth-of-type(3) {
     position: absolute;
     width: 100%;
     height: 125px;
@@ -416,40 +475,47 @@ footer {
     padding: 0 18px;
     justify-content: flex-start;
     gap: 1rem;
-    top: 50%; 
+    top: 50%;
     transform: translateY(-25%);
     transition: opacity .5s ease-in-out;
-    & > li {
+
+    &>li {
       list-style-type: none;
       padding: 0;
       margin: 0;
-      & > svg {
+
+      &>svg {
         margin: 0;
         margin: 0;
 
         width: 50px;
         height: 50px;
-        
+
       }
+
       #jquery path {
         fill: white
       }
     }
   }
+
   &:hover {
-    box-shadow:1px 1px 20px var(--c-white-pure);
+    box-shadow: 1px 1px 20px var(--c-white-pure);
     border-radius: .5rem;
-    
-    & > div:nth-of-type(2) {
+
+    &>div:nth-of-type(2) {
       background-color: var(--c-negro-landing-page);
       opacity: 0.5;
     }
-    & > div:first-of-type {
+
+    &>div:first-of-type {
       z-index: 1;
     }
-    & > div:nth-of-type(3) {
+
+    &>div:nth-of-type(3) {
       opacity: 1;
     }
+
     & img {
       scale: 1.05
     }
@@ -458,26 +524,30 @@ footer {
 
 .proyecto-img {
   transition: scale 0.5s ease;
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   object-fit: contain;
   border: 1px solid black;
   display: flex;
   border-radius: 3px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   color: var(--c-white-pure);
-  
-  }
 
-#portafolio, #portfolio {
-  color:var(--c-white-pure);
-  & > div:first-of-type {
+}
+
+#portafolio,
+#portfolio {
+  color: var(--c-white-pure);
+
+  &>div:first-of-type {
     display: flex;
     gap: 1rem;
     align-items: center;
     justify-content: center;
     color: var(--c-sky);
     padding: 50px 0;
-    & > div {
+
+    &>div {
       cursor: pointer;
       font-size: 20px;
       font-weight: 400;
@@ -486,6 +556,7 @@ footer {
       padding: .5rem;
       border-radius: 10px;
       transition: background-color .3s ease;
+
       &:hover {
         background-color: var(--c-dorado-fino);
         color: white
@@ -519,27 +590,31 @@ footer {
   display: none !important
 }
 
-#habilidades > div, #skills > div {
+#habilidades>div,
+#skills>div {
   & button {
     display: none !important;
   }
-  & > div {
 
-    & > div {
-      
+  &>div {
+
+    &>div {
+
       padding: 100px 0;
 
     }
   }
 }
 
-#habilidades  div  img, #skills div img {
+#habilidades div img,
+#skills div img {
   margin: 0 auto;
   width: 80px;
-  height: 80px; 
+  height: 80px;
 }
 
-#habilidades span, #skills span {
+#habilidades span,
+#skills span {
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -560,15 +635,16 @@ footer {
 }
 
 
-#habilidades span::after, #skills span::after {
+#habilidades span::after,
+#skills span::after {
   border: 7px solid transparent;
   border-top-color: var(--c-sky);
   content: '';
-  left:50%;
+  left: 50%;
   z-index: 999;
   margin-left: -5px;
   position: absolute;
-  top: 100%;  
+  top: 100%;
 
 }
 
@@ -582,15 +658,19 @@ footer {
   0% {
     left: 0;
   }
+
   100% {
     left: -100%;
   }
 }
 
 @keyframes blink-caret {
-  from, to {
+
+  from,
+  to {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
@@ -600,6 +680,7 @@ footer {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -610,6 +691,7 @@ footer {
     transform: translateY(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -621,6 +703,7 @@ footer {
     transform: translateY(-1000%);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -632,6 +715,7 @@ footer {
     transform: translateY(50%);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -643,6 +727,7 @@ footer {
     transform: scale(0);
     opacity: 0;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -657,20 +742,24 @@ footer {
   #navbar.toogle {
     display: flex !important
   }
+
   #navbar {
-    display:none;
+    display: none;
     flex-direction: column;
     padding: 0;
     padding-top: 4.1rem;
     background-color: var(--c-fondo-sky);
-    & > ul {
+
+    &>ul {
       width: 100%;
       gap: 0;
       flex-direction: column;
-      & > li {
+
+      &>li {
         width: 100%;
-        & > a {
-        
+
+        &>a {
+
 
           display: flex;
           align-items: center;
@@ -678,6 +767,7 @@ footer {
           width: 100%;
           padding: .5rem 1.5rem;
         }
+
         &:hover {
           background-color: var(--c-dorado);
         }
@@ -685,21 +775,14 @@ footer {
     }
   }
 
-  #bloque > div {
+  #bloque>div {
     width: 80%;
   }
 }
 
-@media (max-width: 843px) {
-  #bloque > div {
-    height: 80%;
-    overflow-y: scroll;
-  }
-}
-
 @media (max-width: 600px) {
-  #portafolio > div:first-of-type {
-    
-    flex-direction:column;
+  #portafolio>div:first-of-type {
+
+    flex-direction: column;
   }
 }

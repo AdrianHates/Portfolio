@@ -72,3 +72,28 @@
     top:0%;
     min-height: 100vh;
     }
+
+    @media (max-width:1280px) {
+        #titulo {
+          >#bloque {
+           > div {
+              width: auto;
+              margin: 0 2rem;
+            }
+          }
+        }
+    }
+
+    @media (max-width: 843px) {
+      #bloque > div {
+        margin: 0 2rem;
+        height: 80%;
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      #bloque > div {
+        overflow-y: scroll;
+      }
+    }
