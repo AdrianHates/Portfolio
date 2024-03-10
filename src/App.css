@@ -559,7 +559,7 @@ footer {
 
       &:hover {
         background-color: var(--c-dorado-fino);
-        color: white
+        color: white !important
       }
     }
   }
