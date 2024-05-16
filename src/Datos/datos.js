@@ -35,8 +35,8 @@ export const proyectos=[
       texto: 'Pokemon Emerald',
       categoria: 'game',
       code: 'https://github.com/AdrianHates/pokemon',
-      src: 'https://i.imgur.com/TqhwpZw.jpg',
-      href: 'https://adrianhates.github.io/pokemon',
+      src: 'https://i.imgur.com/E9I0UCM.png',
+      href: 'https://adrianhates.github.io/newpokemon',
       tecnology: ['react', 'css', 'python', 'postgresql', 'typescript']
 
 
@@ -87,5 +87,5 @@ export const proyectos=[
 
 export const description = {
   es: ["Soy una persona muy trabajadora y comprometida con tres meses de experiencia en prácticas en programación y ciencias exactas. Mi enfoque está en el desarrollo fullstack, destacando en JavaScript, React y Node.js. Durante mis prácticas, contribuí al desarrollo de proyectos web de alta calidad. Estoy comprometido con el aprendizaje continuo y emocionado por crecer en este campo."],
-  en: ["I am a passionate and dedicated professional in the field of programming and exact sciences, with a track record of approximately a year and a half in continuous learning. During this time, I have undertaken various projects, ranging from the development of landing pages to the creation of high-quality and functional websites.", "My skills span the fullstack development spectrum, with a particular emphasis on the frontend, where I have a strong command of JavaScript and React. Additionally, I possess significant experience in backend development using technologies such as Node.js and Python."]
+  en: ["I am a very hard-working and committed person with three months of internship experience in programming and exact sciences. My focus is on fullstack development, highlighting JavaScript, React and Node.js. During my internship, I contributed to the development of high-quality web projects. I am committed to continuous learning and excited to grow in this field."]
 }
