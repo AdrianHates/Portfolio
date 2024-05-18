@@ -372,7 +372,7 @@ footer {
   margin: 0 auto;
   padding: 0 26px;
   max-width: 1280px;
-  justify-items: center
+  justify-items: center;
 }
 
 @media (max-width:640px) {
@@ -412,7 +412,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+    
     &>a:first-of-type {
       background-color: var(--c-negro-landing-page);
       padding: .5rem 1rem;
@@ -423,7 +423,6 @@ footer {
       font-weight: 700;
       letter-spacing: 2px;
       transition: background-color .5s ease-out;
-
       &:hover {
         background-color: var(--c-dorado-button);
       }
@@ -460,7 +459,6 @@ footer {
     background-color: var(--c-negro-landing-page);
     opacity: 0;
     transition: opacity .5s ease-in-out;
-
   }
 
   &>div:nth-of-type(3) {
@@ -524,15 +522,14 @@ footer {
 
 .proyecto-img {
   transition: scale 0.5s ease;
-  max-width: 350px;
-  width: 100%;
   object-fit: contain;
   border: 1px solid black;
   display: flex;
   border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.8);
   color: var(--c-white-pure);
-
+  width: 100%;
+  max-width: 350px;
 }
 
 #portafolio,

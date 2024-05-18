@@ -3,7 +3,7 @@ export const proyectos = [
     texto: "Changomon",
     categoria: "game",
     code: "https://github.com/AdrianHates/game-simon",
-    src: "https://i.imgur.com/b3eZ6cV.png",
+    src: "https://imgur.com/zAaX0if",
     href: "https://adrianhates.github.io/game-simon/",
     tecnology: ["html", "css", "javascript", "react"],
   },
